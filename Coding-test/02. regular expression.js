@@ -113,7 +113,7 @@ var re = new RegExp("ab+c");
         const one = [1,2,3,4,5];
         const two = [2,1,2,3,2,4,2,5];
         const three = [3,3,1,1,2,2,4,4,5,5];
-        const result = [0,0,0];
+        const result = [0,0,0];   // 아예 1,2,3번 자리를 지정
         for (let i=0; i<answers.length; i++) {
             if(answers[i] === one[i%5]) result[0]++;
             if(answers[i] === two[i%8]) result[1]++;
@@ -121,7 +121,7 @@ var re = new RegExp("ab+c");
         }
         const answer = [];
         for (let j=0; j<result.length; j++) {
-            if (result[j] != 0) answer[j] = j+1;
+            if (result[j] != 0) answer.push(j+1);
         }
         return answer;
     }
