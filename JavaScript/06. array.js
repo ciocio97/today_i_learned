@@ -61,7 +61,7 @@ console.log(fruits);
 // splice: remove an item by index position 중간에 제거, 중간에 추가
 fruits.push('🍐','🍇','🍉');
 console.log(fruits);
-fruits.splice(2, 2);
+fruits.splice(2,2);
 console.log(fruits);
 fruits.splice(1,1,'🍍','🍒');
 console.log(fruits);
