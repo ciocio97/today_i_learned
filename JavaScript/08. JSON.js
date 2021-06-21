@@ -25,12 +25,12 @@ const rabbit = {
     size: null,
     birthDate: new Date(),
     jump: () => {
-        console.log(`${this.name} can jump!`);} /* {name: "tori", color: "white", size: null,
-    }                                          birthDate: Tue Jun 08 2021 22:53:44 GMT+0900 */
+        console.log(`${this.name} can jump!`);} 
 };
 
 json = JSON.stringify(rabbit);
-console.log(json);
+console.log(json); /* {name: "tori", color: "white", size: null,*/
+                   /*birthDate: Tue Jun 08 2021 22:53:44 GMT+0900 */
 
 json = JSON.stringify(rabbit, ['name', 'color']);  // 원하는 property만 변환 가능
 console.log(json);
