@@ -154,14 +154,14 @@ const add = function(a, b) {
 };
 
 // 변신
-// const simplePrint = () => console.log('simplePrint');
+const simplePrint = () => console.log('simplePrint');
 
 // 변신
-// const add = (a, b) => a + b;
+const add = (a, b) => a + b;
 // the other
-// const simpleMultiply = (a, b) => {
-    // return a * b;
-// };
+const simpleMultiply = (a, b) => {
+    return a * b;
+};
 
 // IIFE: Immediately Invoked Function Expression 
 (function hello() {
