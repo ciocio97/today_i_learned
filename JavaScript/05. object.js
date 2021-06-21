@@ -73,13 +73,15 @@ console.log('random' in ellie);
 console.log(ellie.random);
 
 // 6. for...in vs for...of
-// for (key in obj)
+// for (key in obj)          
+// for in : (iterator) => 값을 차례대로 꺼낼 수 있는 객체
 console.clear();
 for (key in ellie) {
     console.log(key);
 }
 
-// for (value of iterable)
+// for (value of iterable)   
+// for of : (iterable) => 반복 가능한 객체 ex. a number of array
 const array = [1, 2, 4, 5];
 for (value of array) {
     console.log(value)
