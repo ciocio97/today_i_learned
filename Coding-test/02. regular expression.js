@@ -34,39 +34,39 @@ var re = new RegExp("ab+c");
 
 // 2. / / 슬래쉬 안의 세상들
 
-    ^A = // 입력의 시작 부분 대응 ex. "an A" (x) "An E" (o)
-    A$ = // 입력의 끝 부분 대응  ex. "an A" (o) "An E" (x)
-         // ^$ -> 문자열이 비어있다.
-    ao* = // 바로 앞 표현식이 0회 이상 반복 부분과 대응 
+    ^A  // 입력의 시작 부분 대응 ex. "an A" (x) "An E" (o)
+    A$  // 입력의 끝 부분 대응  ex. "an A" (o) "An E" (x)
+            // ^$ -> 문자열이 비어있다.
+    ao* // 바로 앞 표현식이 0회 이상 반복 부분과 대응 
             // ex. "The aooooe" (o)-4회  "An aid" (o)-0회
-    a+ = // 바로 앞 표현식이 1회 이상 반복 부분과 대응
-           // ex. "caaaandy" (o)-4회 
-    e?le? = // 바로 앞 표현식이 0회 or 1회 등장 부분과 대응
-              // ex. 2*2 = 4가지 경우의 수가 나옴
-              //     'l' or 'le' or 'el' or 'ele'
+    a+  // 바로 앞 표현식이 1회 이상 반복 부분과 대응
+            // ex. "caaaandy" (o)-4회 
+    e?le?  // 바로 앞 표현식이 0회 or 1회 등장 부분과 대응
+                // ex. 2*2 = 4가지 경우의 수가 나옴
+                //     'l' or 'le' or 'el' or 'ele'
 
-    a{n} = // 바로 앞 표현식이 n번 나타는 부분과 대응 (a가 n번)
-    a{n,m} = // 바로 앞 표현식이 최소 n개, 최대 m개 나타나는 부분과 대응
+    a{n}  // 바로 앞 표현식이 n번 나타는 부분과 대응 (a가 n번)
+    a{n,m}  // 바로 앞 표현식이 최소 n개, 최대 m개 나타나는 부분과 대응
 
-    [xyz] = // 문자 set 내용 대응(내부: 특수문자라고 차이 없음) ex. /[a-z.]/ = /[\w.]/
-    [^xyz] = // 문자 set 내용 제외하고 대응
+    [xyz]  // 문자 set 내용 대응(내부: 특수문자라고 차이 없음) ex. /[a-z.]/ = /[\w.]/
+    [^xyz]  // 문자 set 내용 제외하고 대응
     
-    [\b] = // back space (<-)
+    [\b]  // back space (<-)
 
 
-    \단어문자 = // 특별한 뜻 有 
+    \단어문자  // 특별한 뜻 有 
 
-        \b = // 단어 공백 (경계)
-        \B.. = // 단어 공백 x (문자열 시작/끝 단어가 아닌 것으로 간주)
-        \cX = // 문자열 내부 제어 문자에 대응 ( X = [A-Z] )
-        \d = // 숫자에 대응 ( = [0-9] )
-        \D = // 문자에 대응 ( = [^0-9] )
-        \w = // 숫자&문자에 대응 (단어문자) ( = [A-Z a-z 0-9 _] )
-        \W = // 특수문자에 대응 (단어문자 반대) ( = [^A-Z a-z 0-9 _] )
+        \b  // 단어 공백 (경계)
+        \B..  // 단어 공백 x (문자열 시작/끝 단어가 아닌 것으로 간주)
+        \cX  // 문자열 내부 제어 문자에 대응 ( X = [A-Z] )
+        \d  // 숫자에 대응 ( = [0-9] )
+        \D  // 문자에 대응 ( = [^0-9] )
+        \w  // 숫자&문자에 대응 (단어문자) ( = [A-Z a-z 0-9 _] )
+        \W  // 특수문자에 대응 (단어문자 반대) ( = [^A-Z a-z 0-9 _] )
 
-        \0 = // null (8진 escape sequence)
+        \0  // null (8진 escape sequence)
 
-    \특수문자 = // 특별한 뜻 無
+    \특수문자  // 특별한 뜻 無
 
 
 
@@ -120,9 +120,35 @@ var re = new RegExp("ab+c");
             if(answers[i] === three[i%10]) result[2]++;
         }
         const answer = [];
-        for (let j=0; j<result.length; j++) {
-            if (result[j] != 0) answer.push(j+1);
+        for (let j=0; j<result.length; j++) {         // -> 문제점 : result = [3,4,5]; 나왔을 때 
+            if (result[j] != 0) answer.push(j+1);     //            answer = [3]; 인데, [1,2,3]; 으로 출력됌 !!
         }
         return answer;
+    }
+}
+// 문제점 고치는 풀이
+{
+    function solution(answers) {
+        
+        const one = [1,2,3,4,5];
+        const two = [2,1,2,3,2,4,2,5];
+        const three = [3,3,1,1,2,2,4,4,5,5];
+        const result = [0,0,0];
+        for(let i=0; i<answer.length; i++){
+            if(answers[i] === one[i%5]) result[0]++;
+            if(answers[i] === two[i%8]) result[1]++;
+            if(answers[i] === three[i%10]) result[2]++;
+        }
+        const answer = [];
+        const set = new Set(result);
+        const array = Array.from(set);
+        for(let j=0; j<result.length; j++){           // -> 문제점 해결 >ㅁ<
+            if(array.length == result.length){        // 겹치는 값 없을 때 최댓값 가진 사람 출력
+                const max = Math.max(array);
+                answer.push(array.indexOf(max)+1);    
+            }else if(result[j] != 0){                 // 겹치는 값 있을 때 값=0 빼고 차례로 사람 출력
+                answer.push(j+1);
+            }
+        }
     }
 }    
