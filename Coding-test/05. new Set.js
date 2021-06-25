@@ -28,7 +28,7 @@ console.log(set);                             // {3,2} <- new Set() 중복값을
 const newArray1 = [...set];
 console.log(newArray1);                       // [3,2] <- [...{}] 배열의 형태로 변환.
 const newArray2 = Array.from(set);
-console.log(newArray2);                       // [3,2] <- Array.from() 배열의 형태로 변환.
+console.log(newArray2);                       // [3,2] <- Array.from({}) 배열의 형태로 변환.
 }
 {
 nums = [1,3,4,1,3];
