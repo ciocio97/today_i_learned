@@ -33,7 +33,7 @@
                     n = Math.floor(n / 3);      // 어짜피 반복은 1,2,4니까 나머지로 뒤쪽 구해주고
                     break;                      // 몫으로 앞쪽 구해서 더해주기 wow
                 case 0:
-                    answer = "4" + answer;
+                    answer = "4" + answer;      // 어짜피 1,2,4 내 반복 -> switch문 떠올릴 수 있다. 
                     n = n / 3 - 1;
                     break;
             }
