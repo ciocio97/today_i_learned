@@ -52,6 +52,7 @@
                 --04.빌드 도구  : 수현 도구를 통해 작성된 소스 빌드 및 배포, 라이브러리 관리를 지원하는 소프트웨어.
                 --05.테스트 도구  : 모듈들이 요구사항에 적합하게 구현되었는 지 테스트하는 소프트웨어.
                 --06.형상 관리 도구  : 산출물을 버전별로 관리하여 품질 향상을 지원하는 소프트웨어. 
+
 <공통 모듈 구현>
 --모듈(Module)이란? 
     --모듈화를 통해 분리된 시스템의 각 기능들로, 하나의 완전한 기능을 수행할 수 있는 독립된 실체.
@@ -89,6 +90,7 @@
 --팬인(Fan-In) / 팬 아웃(Fan-Out) ? --소프트웨어의 구성요소인 모듈을 계층적으로 분석하기위해서 활용하는 개념.
     --팬인(Fan-In)    : 모듈 자신을 기준으로 모듈에 들어오면 In
     --팬아웃(Fan-Out) : 모듈 자신을 기준으로 모듈에서 나가면 Out
+
 <서버 프로그램 구현>
 --서버 프로그램 구현 절차
 
@@ -128,13 +130,13 @@
                             parameterType = "customer.vo.JoinVO"
                             resultType = "customer.vo.JoinVO">
                         SELECT * FROM CUSTOMER
-                        WHERE(nm =# {nm})
+                        WHERE(nm = #{nm})
                     </select>
 
                     --아이디,패스워드,이름 등을 회원 테이블에 저장
                     <insert id = "insertJoin"
                             parameterType = "customer.vo.JoinVO">
-                        INSERT INTO CUSTOMER values(#{id}, #{pw}, #{nm})
+                        INSERT INTO CUSTOMER VALUES(#{id}, #{pw}, #{nm})
                     </insert>
                 </mapper>
 
@@ -173,13 +175,14 @@
         --Validation 로직 구현
             --회원가입이 성공/실패 시 다른 메세지를 호출하는 검증 로직을 구현한다.
 
-    --Front End :                                                                  <-> 화면 구현
+    --Front End :                                                                               <-> 화면 구현
+
 <배치 프로그램 구현>
 --배치 프로그램(Batch Program)이란? 
     --사용자와의 상호 작용 없이 일련의 작업들을 정기적으로 반복 수행하거나 정해진 규칙에 따라 일괄 처리하는 방식.
 
 --배치 스케줄러(Batch Scheduler)이란? 
-    --일괄 처리(Batch Processing)를 위해 주기적으로 발생하거나 반복적으로 발생하는 작업을 지원하는 도구.
+    --일괄 처리(Batch Processing)를 위해 주기적으로 발생하는 작업을 지원하는 도구.
 
 --배치 스케줄러의 종류
     --스프링 배치(Spring Batch): 스프링 프레임워크의 3대 요소를 모두 사용할 수 있는 스케줄러 배치 애플리케이션.
