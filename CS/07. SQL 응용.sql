@@ -79,6 +79,7 @@
     REVOKE 권한 ON 테이블 FROM 사용자; -- 사용 권한 취소
 
 <응용 SQL 작성하기>
+
 --집계함수
 
     - GROUP BY 
