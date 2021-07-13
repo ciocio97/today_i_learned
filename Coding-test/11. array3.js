@@ -84,10 +84,10 @@
             let count = arr[0];
             let result = arr.findIndex(num => num > count);    // findIndex() 사용법
                                                                // Returns the index of the first element in the array where predicate is true, and -1 otherwise.
-            if(result !== -1){                                 // 조건에 만족하는 제일 첫번째 인텍스 반환하고, 조건 만족하지 않으면 -1 반환한다 !!
+            if(count !== -1){                                  // 조건에 만족하는 제일 첫번째 인텍스 반환하고, 조건 만족하지 않으면 -1 반환한다 !!
                 answer.push(result);
-                arr.splice(0,result);
-            }else{
+                arr.splice(0,result);                          // 오류: signal: aborted (core dumped)
+            }else{                                             // 범위를 벗어났다. count !== -1 이 아니라 result !== -1 였어야 함 !!
                 answer.push(arr.length);
                 arr.splice(0,arr.length);
             }
