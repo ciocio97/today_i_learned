@@ -71,4 +71,4 @@ console.log('value: ${symbol1.description}') //.description 붙여서 출력
 // 타입으로 인해 발생하는 문제가 많음
 // 그래서 js위에 ts(타입스크립트) 올려서 사용한다 !
 
-
+// 그래서 블로그는 어떻게 쓸 것인가 ?!!
