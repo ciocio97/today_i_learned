@@ -33,7 +33,7 @@
 
 // BigInt - ( fairly new, don't use it yet )
 
-// string //자바스크립ㅌ 너무 자유롭다 ^^
+// string //자바스크립트 너무 자유롭다 ^^
 const char = 'c';
 const brendan = 'brendan';
 const greeting = 'hello' + brendan;
