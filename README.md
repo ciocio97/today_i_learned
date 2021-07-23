@@ -1,7 +1,7 @@
 🔥 Today_I_Learned 🔥 미리보기
 =========================
 
-Algorithm
+📍 Algorithm
 ---------
 
 - **개요**
@@ -12,7 +12,7 @@ Algorithm
 
   https://www.udemy.com/ko/
 
-CS
+📍 CS
 --
 
 - **개요**
@@ -22,7 +22,7 @@ CS
 - **자주 쓰는 웹**
 
 
-CSS
+📍 CSS
 ---
 
 - **개요**
@@ -43,7 +43,7 @@ CSS
   
   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-Coding-test
+📍 Coding-test
 -----------
 
 - **개요**
@@ -62,7 +62,7 @@ Coding-test
   <https://www.acmicpc.net/step>
 
 
-Git
+📍 Git
 ---
 
 - **개요**
@@ -74,7 +74,7 @@ Git
   <https://git-scm.com/>
 
 
-HTML
+📍 HTML
 ----
 
 - **개요**
@@ -88,7 +88,7 @@ HTML
   <https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure>
 
 
-JavaScript
+📍 JavaScript
 ----------
 
 - **개요**
@@ -102,7 +102,7 @@ JavaScript
   https://developer.mozilla.org/ko/
 
 
-Useful_Data
+📍 Useful_Data
 -----------
 
 - **개요**
