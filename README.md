@@ -39,7 +39,7 @@ CSS
   
   <https://material.io/resources/color/#!/?view.left=0&view.right=0>
   
-  _CSS _
+  _CSS 배치를 디테일하게 다뤄보자_
   
   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
