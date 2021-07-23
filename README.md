@@ -10,7 +10,8 @@
 
 - **자주 쓰는 웹**
 
-  https://www.udemy.com/ko/
+  📎 [_Udemy Algorithm Class_](https://www.udemy.com/ko/) 
+
 
 📍 CS
 --
@@ -31,17 +32,12 @@
 
 - **유용한 웹**
 
-  _CSS 웹 브라우저 호환성 알아보기_
-
-  <https://caniuse.com/>
+  📎 [_CSS 웹 브라우저 호환성 알아보기_](https://caniuse.com/)
   
-  _CSS 좋은 색조합 
+  📎 [_CSS 좋은 색조합_](https://material.io/resources/color/#!/?view.left=0&view.right=0)
   
-  <https://material.io/resources/color/#!/?view.left=0&view.right=0>
-  
-  _CSS 배치를 디테일하게 다뤄보자_
-  
-  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  📎 [_CSS 배치를 디테일하게 다뤄보자_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+ 
 
 📍 Coding-test
 -----------
@@ -53,13 +49,9 @@
 
 - **유용한 웹**
 
-  _프로그래머스_ 
-  
-  <https://programmers.co.kr/>
+  📎 [_프로그래머스_](https://programmers.co.kr/)
 
-  _백준_ 
-  
-  <https://www.acmicpc.net/step>
+  📎 [_백준_](https://www.acmicpc.net/step)
 
 
 📍 Git
@@ -71,7 +63,7 @@
 
 - **유용한 웹**
 
-  <https://git-scm.com/>
+  📎 [_깃 교과서_](https://git-scm.com/)
 
 
 📍 HTML
@@ -83,9 +75,8 @@
 
 - **유용한 웹**
 
-  _웹 구조의 정석? Document and website structure_
+  📎 [_웹 구조의 정석? Document and website structure_](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 
-  <https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure>
 
 
 📍 JavaScript
@@ -97,9 +88,8 @@
 
 - **유용한 웹**
 
-  _자바스크립트 교과서_
+  📎 [_자바스크립트 교과서_](https://developer.mozilla.org/ko/)
 
-  https://developer.mozilla.org/ko/
 
 
 📍 Useful_Data
