@@ -37,6 +37,10 @@
   📎 [_CSS 좋은 색조합_](https://material.io/resources/color/#!/?view.left=0&view.right=0)
   
   📎 [_CSS 배치를 디테일하게 다뤄보자_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  
+  📎 [_아이콘 무료 사이트_](https://fontawesome.com/account)
+  
+  📎 [_폰트 무료 사이트_](https://fonts.google.com/)
  
 
 📍 Coding-test
