@@ -1,0 +1,32 @@
+/* position: static; -> CSS에서 지정된 default value */
+/* (position 따로 지정안해주면 원하는대로 안움직임) */
+/* HTML에 정의된 순서대로 자연스럽게 불러오는 역할 */
+
+/* position: relative; 기준 -> 원래 있던 자리 */
+/* position: absolute; 기준 -> HTML에서 가까운 box */
+/* position: fixed;    기준 -> 브라우저 화면 */
+/* position: sticky;   기준 -> 스크롤 내려도 고정 */
+
+div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: red;
+}
+
+.container {
+    background: yellow;
+    left: 20px;            /* left와 top에 값을 주었음에도 변화가 일어나지 않음 */
+    top: 20px;             /* 왜? position에 static이라는 값이 이미 내장되어있기 때문임 */
+    position: relative;    /* left와 top 영향주고싶으면, position: relative 값을 줘야한다*/
+}
+
+.box {
+    background: blue;
+    left: 20px;
+    top: 20px;
+    position: relative;    /* 원래 있던 자리를 기준 삼아 ! 움직이는구나 ! */
+    position: absolute;    /* box가 몸담고 있는 container를 기준 삼아 ! 움직이는구나 ! */
+    position: fixed;       /* 내가 보고 있는 브라우저를 기준 삼아 ! 움직이는구나! */
+    position: sticky;      /* 원래 있는 자리 유지하면서 ~ 스크롤 내려도 고 자리에 고대로 !! WOW */
+}
