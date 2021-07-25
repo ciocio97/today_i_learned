@@ -30,7 +30,7 @@
 
   CSS 기본 개념을 정리한 섹션
 
-- **유용한 웹**
+- **자주 쓰는 웹**
 
   📎 [_CSS 웹 브라우저 호환성 알아보기_](https://caniuse.com/)
   
@@ -47,7 +47,7 @@
   매일 1문제씩, 알고리즘 문제 풀이와 리팩토링을 기록한 섹션
 
 
-- **유용한 웹**
+- **자주 쓰는 웹**
 
   📎 [_프로그래머스_](https://programmers.co.kr/)
 
@@ -61,7 +61,7 @@
 
   git과 github 쓰면서 만났던 문제를 해결한 경험을 정리한 섹션
 
-- **유용한 웹**
+- **자주 쓰는 웹**
 
   📎 [_깃 교과서_](https://git-scm.com/)
 
@@ -73,7 +73,7 @@
 
   HTML 기본 개념을 정리한 섹션
 
-- **유용한 웹**
+- **자주 쓰는 웹**
 
   📎 [_웹 구조의 정석? Document and website structure_](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 
@@ -86,7 +86,7 @@
 
   JavaScript 기본 개념을 정리한 섹션
 
-- **유용한 웹**
+- **자주  웹**
 
   📎 [_자바스크립트 교과서_](https://developer.mozilla.org/ko/)
 
