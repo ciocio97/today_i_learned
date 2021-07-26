@@ -90,7 +90,7 @@
 
   JavaScript 기본 개념을 정리한 섹션
 
-- **자주  웹**
+- **자주 쓰는 웹**
 
   📎 [_자바스크립트 교과서_](https://developer.mozilla.org/ko/)
 
