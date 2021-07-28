@@ -11,7 +11,11 @@
   }
   
   body {
-    background-image: url('./data/codestates-motif.png');
+    background-image: url('./data/8.27_background.jpeg');
+    background-size: cover;  
+    /* cover은 화면창 막 움직여도 예쁘게 나온다 ('상하'를 딱 맞춘 느낌)*/
+    /* contain했더니 안예쁘게 잘려서 나온다 ('좌우'를 딱 맞춘 느낌)*/
+    /* 100vh 100vw 오마갓 화면창 움직였더니 유동적으로 변하는게 아니라 막 찌부된다 */
   }
   
   /*
@@ -25,131 +29,43 @@
     align-items: center;
   }
   
+  /* 부모의 flex 속성은 따라가는데, 갑자기 그의 자식들이 static하게 배치됨 */
   .calculator {
-    background-color: #fffb00;
-    width: 390px;
-    height: 520px;
-    border-radius: 33px;
-    padding: 30px 15px 25px 15px;
-    border: solid 7px #95daba;
+    width: 300px;
+    height: 500px;
+    background: rgb(235, 80, 175);
+    position: relative;
+
+    box-shadow: 5px 6px 20px 3px white;
+  }
+  .calculator:before{ 
+    content: "";
+    width: 242.3px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid rgb(235, 80, 175);
+    border-left: 29px solid rgb(250, 168, 232);
+    border-right: 29px solid rgb(250, 168, 232);
+  }
+  .calculator:after {
+    content: "";
+    width: 242.3px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid rgb(235, 80, 175);
+    border-left: 29px solid rgb(250, 168, 232);
+    border-right: 29px solid rgb(250, 168, 232);
   }
   
   .calculator__display--bare {
-    /* display: none; */
-    background-color: #e3f2fd;
-    text-align: center;
-    vertical-align: middle;
+    width: 260px;
     height: 100px;
-    width: 100%;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 25px 15px;
-    overflow: hidden;
-    overflow-wrap: break-word;
+    background: white;
+    margin-left: 20px;
   }
-  
-  .calculator__display--bare > span {
-    display: inline-block;
-    text-align: center;
-    background-color: #ffffff;
-    margin: 5px;
-    width: 40px;
-    height: 45px;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 10px 5px;
-  }
-  
-  .calculator__display--for-advanced {
-    display: none; /* 이 줄을 모두 지우면 advanced 테스트를 하실 수 있습니다.*/
-    background-color: #ffffff;
-    height: 100px;
-    width: 100%;
-    border-radius: 10px;
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 25px 15px;
-    overflow: hidden;
-    overflow-wrap: break-word;
-  }
-  
-  .calculator__buttons {
-    background-color: #e3f2fd;
-    width: 100%;
-    height: 330px;
-    margin-top: 18px;
-    padding: 10px;
-    border-radius: 20px;
-    /**/
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .clear__and__enter {
-    height: 50px;
-    margin: 10px 8px;
-    border-radius: 10px;
-    /**/
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .clear__and__enter > button {
-    border-radius: 30px;
-    width: 50px;
-    height: 40px;
-    margin: 0px 6px; 
-    background-color: #313132;
-    color: #ffffff;
-    cursor: pointer;
-    outline: none;
-    border-bottom: 3px solid #d27082;  /* 예쁜 분홍 그림자가 생겼다 >ㅁ< */
-  }
-  
-  .button__row {
-    height: 100px;
-    margin: 5px;
-    background-color: #ffffff;
-    border-radius: 30px;
-    /**/
-    display: flex;
-    justify-content: space-evenly;  /* 하얀배경의 박스 맨 위에 붙어있던 박스들이 */
-    align-items: center;  /* row의 반대, column축으로 center 위치시켰더니 해결 ! */
-  }
-  
-  .button__row > button {
-    width: 50px;
-    height: 40px;
-    border-radius: 20px;
-    cursor: pointer;  /* 버튼가까이 갔을 때 커서 모양이 변함 */
-    outline: none;
-    background-color: #ffe082;  
-  }
-  
-  .button__row > .operator {
-    color: #ffffff;
-    background-color: #313132;
-  }
-  
-  .button__row > .double {
-    width: 115px;
-  }
-  
-  .button__row > .isPressed {
-    background-color: #00da75;
-  }
-  
-  .logo {
-    position: fixed;
-    padding: 30px;
-    bottom: 0px;
-    right: 0px;
-  }
-  
-  .button__row:nth-child(1) { order: 3;}
-  .button__row:nth-child(2) { order: 2;}
-  .button__row:nth-child(3) { order: 1;}
-  .button__row:last-child { order: 4;}  /*nth-child(4)*/
   
   
