@@ -1,0 +1,71 @@
+/* TODO : CSS파일을 편집하여 원하는 스타일의 계산기를 만들어보세요 :) */
+
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: 'monospace', cursive;
+    color: #000;
+  }
+  
+  body {
+    background-image: url('./data/8.27_background.jpeg');
+    background-size: cover;  
+    /* cover은 화면창 막 움직여도 예쁘게 나온다 ('상하'를 딱 맞춘 느낌)*/
+    /* contain했더니 안예쁘게 잘려서 나온다 ('좌우'를 딱 맞춘 느낌)*/
+    /* 100vh 100vw 오마갓 화면창 움직였더니 유동적으로 변하는게 아니라 막 찌부된다 */
+  }
+  
+  /*
+    Calculator styles
+  */
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 부모의 flex 속성은 따라가는데, 갑자기 그의 자식들이 static하게 배치됨 */
+  .calculator {
+    width: 300px;
+    height: 500px;
+    background: rgb(235, 80, 175);
+    position: relative;
+
+    box-shadow: 5px 6px 20px 3px white;
+  }
+  .calculator:before{ 
+    content: "";
+    width: 242.3px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid rgb(235, 80, 175);
+    border-left: 29px solid rgb(250, 168, 232);
+    border-right: 29px solid rgb(250, 168, 232);
+  }
+  .calculator:after {
+    content: "";
+    width: 242.3px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid rgb(235, 80, 175);
+    border-left: 29px solid rgb(250, 168, 232);
+    border-right: 29px solid rgb(250, 168, 232);
+  }
+  
+  .calculator__display--bare {
+    width: 260px;
+    height: 100px;
+    background: white;
+    margin-left: 20px;
+  }
+  
+  
