@@ -11,40 +11,9 @@
 - **자주 쓰는 웹**
 
   📎 [_Udemy Algorithm Class_](https://www.udemy.com/ko/) 
-
-
-📍 CS
---
-
-- **개요**
-
-  정보처리기사 자격증을 준비하며 공부했던 내용들, 새롭게 알게 된 것들을 정리한 섹션
-
-- **자주 쓰는 웹**
-
-
-📍 CSS
----
-
-- **개요**
-
-  CSS 기본 개념을 정리한 섹션
-
-- **자주 쓰는 웹**
-
-  📎 [_CSS 웹 브라우저 호환성 알아보기_](https://caniuse.com/)
   
-  📎 [_CSS 좋은 색조합_](https://material.io/resources/color/#!/?view.left=0&view.right=0)
   
-  📎 [_CSS 연습하기_](https://www.w3schools.com/css/css_background.asp)
   
-  📎 [_CSS 배치를 디테일하게 다뤄보자_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  
-  📎 [_아이콘 무료 사이트_](https://fontawesome.com/account)
-  
-  📎 [_폰트 무료 사이트_](https://fonts.google.com/)
- 
-
 📍 Coding-test
 -----------
 
@@ -60,16 +29,16 @@
   📎 [_백준_](https://www.acmicpc.net/step)
 
 
-📍 Git
----
+
+📍 CS
+--
 
 - **개요**
 
-  git과 github 쓰면서 만났던 문제를 해결한 경험을 정리한 섹션
+  정보처리기사 자격증을 준비하며 공부했던 내용들, 새롭게 알게 된 것들을 정리한 섹션
 
 - **자주 쓰는 웹**
 
-  📎 [_깃 교과서_](https://git-scm.com/)
 
 
 📍 HTML
@@ -98,9 +67,56 @@
 
 
 
+📍 CSS
+---
+
+- **개요**
+
+  CSS 기본 개념을 정리한 섹션
+
+- **자주 쓰는 웹**
+
+  📎 [_CSS 웹 브라우저 호환성 알아보기_](https://caniuse.com/)
+  
+  📎 [_CSS 좋은 색조합_](https://material.io/resources/color/#!/?view.left=0&view.right=0)
+  
+  📎 [_CSS 연습하기_](https://www.w3schools.com/css/css_background.asp)
+  
+  📎 [_CSS 배치를 디테일하게 다뤄보자_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  
+  📎 [_아이콘 무료 사이트_](https://fontawesome.com/account)
+  
+  📎 [_폰트 무료 사이트_](https://fonts.google.com/)
+ 
+
+
+
+📍 Git
+---
+
+- **개요**
+
+  git과 github 쓰면서 만났던 문제를 해결한 경험을 정리한 섹션
+
+- **자주 쓰는 웹**
+
+  📎 [_깃 교과서_](https://git-scm.com/)
+
+
+
+
 📍 Useful_Data
 -----------
 
 - **개요**
 
   나중에 읽어볼 이슈들을 모아놓은 섹션
+  
+  
+
+📍 Education_in_CodeStates
+-----------------------
+
+- **개요**
+
+  코드스테이츠에서 배운 내용들을 정리한 섹션
