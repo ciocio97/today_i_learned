@@ -65,4 +65,28 @@ function solution(record){
     mySet.size;               // 4
     mySet.delete(7);          // Set {1, {a: 1, b: 2}, {a: 1, b: 2}}
 
+    // set내 항목에 대해 반복
+    // item들을 순서대로 (콘솔에) 기록 -> 1, {a: 1, b: 2} (엇 여기서는 1개만 출력됨?!!)
+    // (여기서 key와 value는 같음)
+    for (let item of mySet) console.log(item);
+    for (let item of mySet.keys()) console.log(item);
+    for (let item of mySet.values()) console.log(item);
+    for (let [key, value] of mySet.entries()) console.log(key);
+
+    // Set과 Array 사이 변환
+    mySet2 = new Set([1, 2, 3, 4]);
+    mySet2.size   // 4
+    [...mySet2];  // [1, 2, 3, 4]
+
+    // 교집합(intersection) 흉내(simulate)내기
+    var intersection = new Set([...set1].filter(x => set2.has(x)));
+
+    // 차집합(difference) 흉내(simulate)내기
+    var difference = new Set([...set1].filter(x => !set2.has(x)));
+
+    // forEach로 set내 항목 반복
+    mySet.forEach(function(value) {
+        console.log(value);
+    })  // 1 / 2 / 3 / 4
+
 }
