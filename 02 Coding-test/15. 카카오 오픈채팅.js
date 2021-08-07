@@ -1,4 +1,4 @@
-// Q3.카카오 오픈채팅
+// Q1.카카오 오픈채팅
 const record = [
     "Enter uid1234 Muzi",
     "Enter uid4567 Prodo",
@@ -163,7 +163,7 @@ function solution(record){
     // Set과 Array 사이 변환
     mySet2 = new Set([1, 2, 3, 4]);
     mySet2.size   // 4
-    [...mySet2];  // [1, 2, 3, 4]
+    console.log([...mySet2]);  // [1, 2, 3, 4]
 
     // 교집합(intersection) 흉내(simulate)내기
     var intersection = new Set([...set1].filter(x => set2.has(x)));
