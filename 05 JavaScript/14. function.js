@@ -35,4 +35,13 @@ console.log(add1(1,2));                  // 13
 // ***기명 또는 무명 함수를 그룹 연산자로 감싸면 함수 리터럴로 평가되어 '함수 객체'가 된다
 (function bar(){console.log('bar');});
 
-bar();                                   // ReferenceError: bar is not defined
+/*bar();                                   // ReferenceError: bar is not defined */
+
+let score = 80;
+
+function doStuff(value){
+    return value = 90;
+}
+
+console.log(doStuff(score));
+console.log(score);
