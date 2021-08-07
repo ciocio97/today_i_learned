@@ -1,17 +1,13 @@
 /* TODO : CSS파일을 편집하여 원하는 스타일의 계산기를 만들어보세요 :) */
 
-/* global */
+/* global 전역 */
 * {
   margin: 0;
   padding: 0;
   border: 0px;
   box-sizing: border-box;
-  font-family: 'monospace', cursive;
+  font-family: 'monospace', 'cursive';
   color: #000;
-}
-
-body {
-  background-image: url('./data/codestates-motif.png');
 }
 
 /*
