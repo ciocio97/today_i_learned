@@ -46,21 +46,30 @@ body {
 }
   
 .calculator__display--bare {
+  display: none;
+  /*width: 260px;
+  height: 90px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background: white;*/
+
+  /* flex-box 주고(row), 자식 요소들 (j-c)으로 일정 간격 주고, (a-i)으로 중심 잡기 */
+  /* 이게 자식 요소들이 span태그들이라 적용된거구나 (div는 안됌..) */
+  /*display: flex;
+  justify-content: space-evenly; 
+  align-items: center;*/
+}
+
+.calculator__display--for-advanced {
   width: 260px;
   height: 90px;
   margin-top: 50px;
   border-radius: 20px;
   background: white;
 
-  /* flex-box 주고(row), 자식 요소들 (j-c)으로 일정 간격 주고, (a-i)으로 중심 잡기 */
-  /* 이게 자식 요소들이 span태그들이라 적용된거구나 (div는 안됌..) */
   display: flex;
   justify-content: space-evenly; 
   align-items: center;
-}
-
-.calculator__display--for-advanced {
-  display: none;
 }
 
 .calculator__buttons {
