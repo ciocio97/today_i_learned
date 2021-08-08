@@ -82,6 +82,7 @@ Git; (work flow) 로컬
 
     * 다 해결 하셨다면 원격 저장소에 업데이트 부탁
             git push -f origin '저장소 이름'
+        
 
 - staging area / index
 
@@ -104,4 +105,14 @@ Git; (work flow) 로컬
 
     git push -u origin master : 변경사항 푸쉬
 
+
+* 로컬 -> 원격 (저장소)
+    : local directory에서 파일 위치를 대거 이동했거나 파일 삭제를 굉장히 많이 했을 때
+      (git을 쓰면서 잊지 말아야 할 것은 파일의 이동/삭제/추가/변경 모두 github에 반영해줘야한다는거다.)
+
+    git add -u : 삭제한 파일들을 update tracked files
+
+    git commit -m "msg" : 
+
+    git push : 삭제한 내용들 github에 반영
 
