@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>twittler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://kit.fontawesome.com/4b15edcc6c.js" crossorigin="anonymous"></script>
+  <script src="data.js"></script>
+</head>
+<body>
+  <!-- 여기에 HTML 구조를 작성하세요. 아래 코드는 예제이며, 얼마든지 바꿀 수 있습니다 -->
+  <div id="greeting">twittler</div>
+  <!--<div id="test"></div>-->
+  <header>
+    <div class="align-left">
+      <div id="username">username</div>
+      <input id="input__username" type="text" placeholder="이름을 입력해주세요">
+    </div>
+    <div class="align-left">
+      <div id="message">message</div>
+      <input id="input__message" type="text" placeholder="메세지를 입력해주세요">
+    </div>
+  </header>
+  <div class="align-right">
+    <button id="input_comment_btn">twit</button>
+  </div>
+  <section>
+    <div>
+    <br>
+    <button id="update__comments_btn">update twit</button>
+    </div>
+    <ul>
+      <li class="twit">
+        <i class="fas fa-user-circle"></i>
+        <span class="name">lee</span>
+        <span class="date">date</span>
+        <div class="comment">안녕하세요</div>
+      </li>
+      <li class="twit">
+        <i class="far fa-user-circle"></i>
+        <span class="name">kim</span>
+        <span class="date">date</span>
+        <div class="comment">안녕하세요</div>
+      </li>
+      <li class="twit">
+        <i class="fas fa-user-circle"></i>
+        <span class="name">park</span>
+        <span class="date">date</span>
+        <div class="comment">안녕하세요</div>
+      </li>
+      <li class="twit">
+        <i class="far fa-user-circle"></i>
+        <span class="name">song</span>
+        <span class="date">date</span>
+        <div class="comment">안녕하세요</div>
+      </li>
+    </ul>
+  </section>
+  <div class="footer">
+    <button id="more__comments_btn">more</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
