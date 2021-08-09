@@ -66,11 +66,11 @@
 
 - **휴대폰 번호가 형식에 맞을 때**
 
-![Screenshot from 2021-08-09 20-23-10](https://user-images.githubusercontent.com/80025242/128699188-fee86ea5-ce66-4490-8bed-47b18242e690.png)
+<kbd>![Screenshot from 2021-08-09 20-23-10](https://user-images.githubusercontent.com/80025242/128699188-fee86ea5-ce66-4490-8bed-47b18242e690.png)</kbd>
 
-![Screenshot from 2021-08-09 20-23-34](https://user-images.githubusercontent.com/80025242/128699232-d93d6369-9a20-4831-ab8c-a02d9ff4f882.png)
+<kbd>![Screenshot from 2021-08-09 20-23-34](https://user-images.githubusercontent.com/80025242/128699232-d93d6369-9a20-4831-ab8c-a02d9ff4f882.png)</kbd>
 
-![Screenshot from 2021-08-09 20-23-54](https://user-images.githubusercontent.com/80025242/128699250-178ee4f7-c145-4acf-af0a-fe1bea2ed4fe.png)
+<kbd>![Screenshot from 2021-08-09 20-23-54](https://user-images.githubusercontent.com/80025242/128699250-178ee4f7-c145-4acf-af0a-fe1bea2ed4fe.png)</kbd>
 
-![Screenshot from 2021-08-09 20-24-20](https://user-images.githubusercontent.com/80025242/128699271-5e7f6df7-7ba3-4bc9-9453-bbabf3663e4a.png)
+<kbd>![Screenshot from 2021-08-09 20-24-20](https://user-images.githubusercontent.com/80025242/128699271-5e7f6df7-7ba3-4bc9-9453-bbabf3663e4a.png)</kbd>
 
