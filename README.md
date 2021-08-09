@@ -7,7 +7,7 @@
 
 - **Toy projects**
 
-  📎 [JS 계산기](http://127.0.0.1:5500/Education_in_CodeStates/21.07.27%20calculator-master/calculator.html){:target="_blank"}
+  📎 [_JS 계산기_](http://127.0.0.1:5500/Education_in_CodeStates/21.07.27%20calculator-master/calculator.html){:target="blank"}
 
   📎 [_미니 댓글창_](http://127.0.0.1:5500/Education_in_CodeStates/21.08.03%20twittler/index.html){:target="_blank"}
 
@@ -24,7 +24,7 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_Udemy Algorithm Class_](https://www.udemy.com/ko/){: target="_blank"} 
+  📎 [_Udemy Algorithm Class_](https://www.udemy.com/ko/){:target="_blank"}
   
   
   
@@ -38,9 +38,9 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_프로그래머스_](https://programmers.co.kr/){: target="_blank"}
+  📎 [_프로그래머스_](https://programmers.co.kr/){:target="_blank"}
 
-  📎 [_백준_](https://www.acmicpc.net/step){: target="_blank"}
+  📎 [_백준_](https://www.acmicpc.net/step){:target="_blank"}
 
 
 
@@ -64,7 +64,7 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_웹 구조의 정석? Document and website structure_](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure){: target="_blank"}
+  📎 [_웹 구조의 정석? Document and website structure_](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure){:target="_blank"}
 
 
 
