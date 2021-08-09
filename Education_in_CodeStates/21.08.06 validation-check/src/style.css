@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(188, 211, 253);
+  background-color: rgb(105, 105, 105);
 }
 
 /* 아 미쳤;; container의 자식 속성은 main 하나니까 
@@ -17,13 +17,19 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: rgba(235, 241, 253, 0.267);
+}
+
+#main__text {
+  color: rgb(73, 73, 73);
+  padding-bottom: 20px;
 }
 
 .createAccount_box {
   background-color: rgb(255, 255, 255);
   width: 400px;
   height: 600px;
-  border-radius: 20px;
+  border-radius: 30px;
 
   display: flex;
   flex-direction: column;
@@ -73,8 +79,11 @@ input {
   border-bottom: 1px solid rgba(91, 125, 192, 0.342);  /* 여윽시 cascading 언어 */
 }
 
-input:focus {outline:none;}  /* input 박스를 클릭했을 때 나오는 테두리 색상 없애기 */
-/* input:focus {outline:2px solid #d50000;} input 박스를 클릭했을 때 나오는 테두리 색상 변경하기 */
+input:focus {
+  outline:none;
+  /* input 박스를 클릭했을 때 나오는 테두리 색상 없애기 */
+  /* input:focus {outline:2px solid #d50000;} input 박스를 클릭했을 때 나오는 테두리 색상 변경하기 */
+}  
 
 .hide {
   visibility: hidden;
@@ -82,18 +91,20 @@ input:focus {outline:none;}  /* input 박스를 클릭했을 때 나오는 테�
 }
 
 .input__button {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 #input__btn {
   width: 330px;
   height: 40px;
-  background-image: Linear-gradient();
+  background: linear-gradient(135deg, #e570e7 0%,#79f1fc 100%);;
   border: 0;
   border-radius: 20px;
   color: white;
   font-weight: 800;
   font-size: 16px;
+
+  cursor: pointer;
 }
 
 label {

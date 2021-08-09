@@ -21,40 +21,40 @@
   <!--회원가입 버튼-->
   <div class="container">
     <main class="createAccount_box">
-      <h1>Create account</h1>
+      <h1 id="main__text">Create account</h1>
       <div class="input__lists">
         <fieldset>
           <label>이름</label>
           <input type="text" id="name" placeholder="이름">
-          <div class="success-name hide success">"반갑습니다 !"</div>
-          <div class="failure-name hide failure">"이름을 입력해주세요 !"</div>
+          <div class="success-name hide success">반갑습니다 !</div>
+          <div class="failure-name hide failure">이름을 입력해주세요 !</div>
         </fieldset>
         <fieldset>
           <label>아이디(이메일)</label>
-          <input type="text" id="username" placeholder="아이디(이메일)">
-          <div class="success-message hide success">"사용할 수 있는 아이디 입니다"</div>
-          <div class="failure-message hide failure">"최소 4자 이상이고, 영문자와 숫자만 입력이 가능합니다"</div>
+          <input type="text" id="username" placeholder="아이디">
+          <div class="success-message hide success">사용할 수 있는 아이디 입니다</div>
+          <div class="failure-message hide failure">최소 4자 이상이고, 영문자와 숫자만 입력이 가능합니다</div>
         </fieldset>
         <fieldset>
           <label>비밀번호</label>
           <input type="password" id="password" placeholder="비밀번호">
-          <div class="failure-password hide failure">"최소 8자 이상이고, 영문자, 숫자, 특수문자를 하나 이상 포함해야합니다"</div>
+          <div class="failure-password hide failure">최소 8자 이상이고, 영문자, 숫자, 특수문자를 하나 이상 포함해야합니다</div>
         </fieldset>
         <fieldset>
           <label>비밀번호 확인</label>
           <input type="password" id="password-retype" placeholder="비밀번호 확인">
-          <div class="match-message hide success">"비밀번호가 일치합니다"</div>
-          <div class="mismatch-message hide failure">"비밀번호가 일치하지 않습니다"</div>
+          <div class="match-message hide success">비밀번호가 일치합니다</div>
+          <div class="mismatch-message hide failure">비밀번호가 일치하지 않습니다</div>
         </fieldset>
         <fieldset>
           <label>휴대폰 번호</label>
           <input type="text" id="phone-number" placeholder="휴대폰 번호">
-          <div class="success-number hide success">"확인되었습니다"</div>
-          <div class="failure-number hide failure">"휴대폰 번호를 정확하게 입력하세요"</div>
+          <div class="success-number hide success">확인되었습니다</div>
+          <div class="failure-number hide failure">휴대폰 번호를 정확하게 입력하세요</div>
         </fieldset>
       </div>
       <div class="input__button">
-        <button id="input__btn">회원가입</button>
+        <button id="input__btn" data-animation="ripple">회원가입</button>
       </div>
     </main>
   </div>

@@ -78,7 +78,7 @@ let mismatchMessage = document.querySelector('.mismatch-message');
 passwordRetype.onkeyup = function() {
   if(isMatch(password.value, passwordRetype.value)) {
     // 비밀번호 입력칸이 비었을 때
-    if(password.value.length === 0 && passwordRetype.value.length === 0){
+    if(password.value.length === 0 || passwordRetype.value.length === 0){
       matchMessage.classList.add('hide');
       mismatchMessage.classList.add('hide');
     }else {
