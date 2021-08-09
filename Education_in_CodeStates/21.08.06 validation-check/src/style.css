@@ -34,26 +34,40 @@ body {
 .input__lists {
   font-size: 70%;
   height: 300px;
+  text-align: center;
 
+  /* 경고문 등장때마다 움직이는 스트레스 유발
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-evenly;
+  */
 }
 
 .success {
+  height: 0vh; /* 한쪽에만 주니까 2칸 차지하던 게 1칸으로 줄긴 했다 -> 원하는대로 됌.. */
   color: rgb(65, 114, 206);
+  text-align: left;
+  padding-top: 2px;
 }
 
 .failure {
   color: rgb(207, 55, 55);
+  text-align: left;
+  padding-top: 2px;
 }
 
 fieldset {
   border: 0px;
+  padding: 4px;
 }
 
+/*#password-retype {
+  비번-비번확인 칸 억지로 늘려주기 ~
+  margin-top: 17px;
+}*/
+
 input {
-  width: 300px;
+  width: 330px;
   height: 35px;
   border: none;
   border-bottom: 1px solid rgba(91, 125, 192, 0.342);  /* 여윽시 cascading 언어 */
@@ -63,7 +77,23 @@ input:focus {outline:none;}  /* input 박스를 클릭했을 때 나오는 테�
 /* input:focus {outline:2px solid #d50000;} input 박스를 클릭했을 때 나오는 테두리 색상 변경하기 */
 
 .hide {
-  display: none;
+  visibility: hidden;
+  /* 컨텐츠는 시각적으로 숨기지만 접근성 트리에는 있어야 하기때문에 display:none은 쓸 수 없어 ?! */
+}
+
+.input__button {
+  margin-top: 50px;
+}
+
+#input__btn {
+  width: 330px;
+  height: 40px;
+  background-image: Linear-gradient();
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  font-weight: 800;
+  font-size: 16px;
 }
 
 label {
