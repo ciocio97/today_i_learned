@@ -8,6 +8,7 @@
   <title>유효성 검사</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="practice.css">-->
   <script src="validator.js" defer></script>
 </head>
 
@@ -32,11 +33,12 @@
           <label>아이디(이메일)</label>
           <input type="text" id="username" placeholder="아이디(이메일)">
           <div class="success-message hide success">"사용할 수 있는 아이디 입니다"</div>
-          <div class="failure-message hide failure">"사용할 수 없는 아이디 입니다"</div>
+          <div class="failure-message hide failure">"최소 4자 이상이고, 영문자와 숫자만 입력이 가능합니다"</div>
         </fieldset>
         <fieldset>
           <label>비밀번호</label>
           <input type="password" id="password" placeholder="비밀번호">
+          <div class="failure-password hide failure">"최소 8자 이상이고, 영문자, 숫자, 특수문자를 하나 이상 포함해야합니다"</div>
         </fieldset>
         <fieldset>
           <label>비밀번호 확인</label>
@@ -52,7 +54,7 @@
         </fieldset>
       </div>
       <div class="input__button">
-        <button>회원가입</button>
+        <button id="input__btn">회원가입</button>
       </div>
     </main>
   </div>
