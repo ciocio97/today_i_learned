@@ -37,7 +37,7 @@ function isMoreThan3Length(value){
 // 글자수가 4개 미만이면
 // "사용할 수 없는 아이디 입니다" 메세지가 출력됩니다.
 
-let elInputId = document.querySelector('#username');
+/*let elInputId = document.querySelector('#username');
 let successMessege = document.querySelector('.success-message');
 let failureMessege = document.querySelector('.failure-message');
 
@@ -52,16 +52,17 @@ elInputId.onkeyup = function() {
       successMessege.classList.add('hide');
       failureMessege.classList.add('hide');
     }else{
-      // 아이디 입력칸이 채워졌을 때 (아이디 길이 < 4)
+      // 아이디 입력칸이 채워졌을 때 (아이디 길이 !== 0)
       successMessege.classList.add('hide');
       failureMessege.classList.remove('hide');
     }
   }
-};
+}; 
 
 function isMoreThan4Length(value) {
   return value.length >= 4;
-}
+}*/
+
 
 // 03 비밀번호 확인
 // 비밀번호와 비밀번호 확인이 일치하면
