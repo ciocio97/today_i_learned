@@ -9,11 +9,10 @@
 
 
   📎 <a href="http://127.0.0.1:5500/Education_in_CodeStates/21.07.27%20calculator-master/calculator.html" target="_blank">_JS 계산기_</a>
-  📎 [_JS 계산기_](http://127.0.0.1:5500/Education_in_CodeStates/21.07.27%20calculator-master/calculator.html)
 
-  📎 [_미니 댓글창_](http://127.0.0.1:5500/Education_in_CodeStates/21.08.03%20twittler/index.html){:target="_blank"}
+  📎 <a href="http://127.0.0.1:5500/Education_in_CodeStates/21.08.03%20twittler/index.html" target="_blank">_미니 댓글창_</a>
 
-  📎 [_회원가입 유효성 검사_](http://127.0.0.1:5500/Education_in_CodeStates/21.08.06%20validation-check/src/index.html){:target="_blank"}
+  📎 <a href="http://127.0.0.1:5500/Education_in_CodeStates/21.08.06%20validation-check/src/index.html" target="_blank">_회원가입 유효성 검사_</a>
 
 
 
@@ -26,7 +25,7 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_Udemy Algorithm Class_](https://www.udemy.com/ko/){:target="_blank"}
+  📎 <a href="https://www.udemy.com/ko/" target="_blank">_Udemy Algorithm Class_</a>
   
   
   
@@ -40,9 +39,9 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_프로그래머스_](https://programmers.co.kr/){:target="_blank"}
+  📎 <a href="https://programmers.co.kr/" target="_blank">_프로그래머스_</a>
 
-  📎 [_백준_](https://www.acmicpc.net/step){:target="_blank"}
+  📎 <a href="https://www.acmicpc.net/step" target="_blank">_백준_</a>
 
 
 
@@ -66,8 +65,7 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_웹 구조의 정석? Document and website structure_](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure){:target="_blank"}
-
+  📎 <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">_웹 구조의 정석? Document and website structure_</a>
 
 
 📍 JavaScript
@@ -79,7 +77,7 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_자바스크립트 교과서_](https://developer.mozilla.org/ko/){: target="_blank"}
+  📎 <a href="https://developer.mozilla.org/ko/" target="_blank">_자바스크립트 교과서_</a>
 
 
 
@@ -92,17 +90,17 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_CSS 웹 브라우저 호환성 알아보기_](https://caniuse.com/){: target="_blank"}
+  📎 <a href="https://caniuse.com/" target="_blank">_CSS 웹 브라우저 호환성 알아보기_</a>
   
-  📎 [_CSS 좋은 색조합_](https://material.io/resources/color/#!/?view.left=0&view.right=0){: target="_blank"}
+  📎 <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0" target="_blank">_CSS 좋은 색조합 material.io_</a>
   
-  📎 [_CSS 연습하기_](https://www.w3schools.com/css/css_background.asp){: target="_blank"}
+  📎 <a href="https://www.w3schools.com/css/css_background.asp" target="_blank">_CSS 연습하기_</a>
   
-  📎 [_CSS 배치를 디테일하게 다뤄보자_](https://css-tricks.com/snippets/css/a-guide-to-flexbox/){: target="_blank"}
+  📎 <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">_CSS 배치를 디테일하게 다뤄보자_</a>
   
-  📎 [_아이콘 무료 사이트_](https://fontawesome.com/account){: target="_blank"}
+  📎 <a href="https://fontawesome.com/account" target="_blank">_아이콘 무료 사이트 fontawesome_</a>
   
-  📎 [_폰트 무료 사이트_](https://fonts.google.com/){: target="_blank"}
+  📎 <a href="https://fonts.google.com/" target="_blank">_폰트 무료 사이트 fonts.google_</a>
  
 
 
@@ -116,7 +114,7 @@
 
 - **자주 쓰는 웹**
 
-  📎 [_깃 교과서_](https://git-scm.com/){: target="_blank"}
+  📎 <a href="https://git-scm.com/" target="_blank">_깃 교과서_</a>
 
 
 
