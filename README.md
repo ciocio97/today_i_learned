@@ -1,6 +1,20 @@
 🔥 Today_I_Learned 🔥 미리보기
 =========================
 
+
+📍 Education_in_CodeStates
+-----------------------
+
+- **Toy projects**
+
+  📎 [_JS 계산기_](http://127.0.0.1:5500/Education_in_CodeStates/21.07.27%20calculator-master/calculator.html)
+
+  📎 [_미니 댓글창_](http://127.0.0.1:5500/Education_in_CodeStates/21.08.03%20twittler/index.html)
+
+  📎 [_회원가입 유효성 검사_](http://127.0.0.1:5500/Education_in_CodeStates/21.08.06%20validation-check/src/index.html)
+
+
+
 📍 Algorithm
 ---------
 
@@ -111,12 +125,3 @@
 - **개요**
 
   나중에 읽어볼 이슈들을 모아놓은 섹션
-  
-  
-
-📍 Education_in_CodeStates
------------------------
-
-- **개요**
-
-  코드스테이츠에서 배운 내용들을 정리한 섹션
