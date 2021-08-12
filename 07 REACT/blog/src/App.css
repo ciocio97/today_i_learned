@@ -1,0 +1,49 @@
+/*아니 text-align의 효과가 이렇게 크다구요?
+.App {
+  text-align: center;
+}*/
+
+/* 여기부터 내꺼 */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.navigator {
+  background: rgb(233, 233, 233);
+  display: flex;
+  color: rgb(216, 144, 144);
+  padding: 15px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.list{
+  padding: 20px;
+}
+
+/*.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
