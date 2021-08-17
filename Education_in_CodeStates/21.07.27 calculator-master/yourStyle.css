@@ -1,5 +1,3 @@
-/* TODO : CSS파일을 편집하여 원하는 스타일의 계산기를 만들어보세요 :) */
-
 /* global */
 * {
   margin: 0;
@@ -11,143 +9,89 @@
 }
 
 body {
-  background-image: url('./data/codestates-motif.png');
+background-image: url('./data/8.27_background.jpeg');
+background-size: cover;  
+/* cover은 화면창 막 움직여도 예쁘게 나온다 ('상하'를 딱 맞춘 느낌)*/
+/* contain했더니 안예쁘게 잘려서 나온다 ('좌우'를 딱 맞춘 느낌)*/
+/* 100vh 100vw 오마갓 화면창 움직였더니 유동적으로 변하는게 아니라 막 찌부된다 */
 }
 
 /*
-  Calculator styles
+Calculator styles
 */
 
+/* 나는 twittler에서 body에 flex-box를 적용했는데 */
+/* 그것보다 태그들 전체를 묶어서 여기다 flex-box적용하는 게 더 낫겠다. */
 .container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
+/* 부모의 flex 속성은 따라가는데, 갑자기 그의 자식들이 static하게 배치됨 */
 .calculator {
-  background-color: #fffb00;
-  width: 390px;
-  height: 520px;
-  border-radius: 33px;
-  padding: 30px 15px 25px 15px;
-  border: solid 7px #95daba;
+width: 300px;
+height: 500px;
+border-radius: 30px;
+background: rgb(235, 80, 175);
+box-shadow: 5px 6px 20px 3px white;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .calculator__display--bare {
-  display: none;
-  background-color: #e3f2fd;
-  text-align: center;
-  vertical-align: middle;
-  height: 100px;
-  width: 100%;
-  border-radius: 20px;
-  font-size: 20px;
-  padding: 25px 15px;
-  overflow: hidden;
-  overflow-wrap: break-word;
-}
+display: none;
+/*width: 260px;
+height: 90px;
+margin-top: 50px;
+border-radius: 20px;
+background: white;*/
 
-.calculator__display--bare > span {
-  display: inline-block;
-  text-align: center;
-  background-color: #ffffff;
-  margin: 5px;
-  width: 40px;
-  height: 45px;
-  border-radius: 20px;
-  font-size: 20px;
-  padding: 10px 5px;
+/* flex-box 주고(row), 자식 요소들 (j-c)으로 일정 간격 주고, (a-i)으로 중심 잡기 */
+/* 이게 자식 요소들이 span태그들이라 적용된거구나 (div는 안됌..) */
+/*display: flex;
+justify-content: space-evenly; 
+align-items: center;*/
 }
 
 .calculator__display--for-advanced {
-  background-color: #ffffff;
-  height: 100px;
-  width: 100%;
-  border-radius: 10px;
-  font-size: 20px;
-  text-align: center;
-  vertical-align: middle;
-  padding: 25px 15px;
-  overflow: hidden;
-  overflow-wrap: break-word;
+width: 260px;
+height: 90px;
+margin-top: 50px;
+border-radius: 20px;
+background: white;
+
+display: flex;
+justify-content: space-evenly; 
+align-items: center;
 }
 
 .calculator__buttons {
-  background-color: #e3f2fd;
-  width: 100%;
-  height: 330px;
-  margin-top: 18px;
-  padding: 10px;
-  border-radius: 20px;
-  /**/
-  display: flex;
-  flex-direction: column;
+width: 100%;
+height: 100%;
+margin: 20px;
+padding: 50px;
+background-color: blue;
+
+/* flex-box 주고(column), 자식 요소들 (j-c)으로 일정 간격 주니까 -> 내가 원하는 수직 등분 가능 ! */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
 }
 
 .clear__and__enter {
-  height: 50px;
-  margin: 10px 8px;
-  border-radius: 10px;
-  /**/
-  display: flex;
-  justify-content: flex-end;
+margin-left: 0px;
 }
 
-.clear__and__enter > button {
-  border-radius: 30px;
-  width: 50px;
-  height: 40px;
-  margin: 0px 6px; 
-  background-color: #313132;
-  color: #ffffff;
-  cursor: pointer;
-  outline: none;
-  border-bottom: 3px solid #d27082;  /* 예쁜 분홍 그림자가 생겼다 >ㅁ< */
+button {
+padding: 15px;
 }
 
-.button__row {
-  height: 100px;
-  margin: 5px;
-  background-color: #ffffff;
-  border-radius: 30px;
-  /**/
-  display: flex;
-  justify-content: space-evenly;  /* 하얀배경의 박스 맨 위에 붙어있던 박스들이 */
-  align-items: center;  /* row의 반대, column축으로 center 위치시켰더니 해결 ! */
+.button__row > .number__double {
+width: 87px; 
 }
-
-.button__row > button {
-  width: 50px;
-  height: 40px;
-  border-radius: 20px;
-  cursor: pointer;  /* 버튼가까이 갔을 때 커서 모양이 변함 */
-  outline: none;
-  background-color: #ffe082;  
-}
-
-.button__row > .operator {
-  color: #ffffff;
-  background-color: #313132;
-}
-
-.button__row > .double {
-  width: 115px;
-}
-
-.button__row > .isPressed {
-  background-color: #00da75;
-}
-
-.logo {
-  position: fixed;
-  padding: 30px;
-  bottom: 0px;
-  right: 0px;
-}
-
-.button__row:nth-child(1) { order: 3;}
-.button__row:nth-child(2) { order: 2;}
-.button__row:nth-child(3) { order: 1;}
-.button__row:last-child { order: 4;}  /*nth-child(4)*/
-
