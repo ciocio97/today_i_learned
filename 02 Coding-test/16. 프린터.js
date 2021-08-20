@@ -44,34 +44,86 @@
 // 처음부터 {0: 2, 1: 1, 2: 3, 3: 2} 이렇게 지정해줘야하나 !!
 
 // 풀이 1
-// location 기억 => 객체의 키값으로 풀자 !
-{
-
-}
-
-// 풀이 2
 // location 기억 => 문자열 변환으로 풀자 !
 {
   function solution(priorities, location) {
     var answer = 0;
+
     priorities[location] = String(priorities[location]);
     
     while(priorities.length > 0){
         
-        for(let i=0; i<priorities.length; i++){
+      for(let i=0; i<priorities.length; i++){
             
-            let max = Math.max(...priorities);
+        let max = Math.max(...priorities);
             
-            if(Number(priorities[0]) !== max){
-                priorities.push(priorities.shift());
-            }else{
-                if(typeof priorities[0] === 'string'){
-                    return answer + 1;
-                }
-                answer++;
-                priorities.shift();
-            }
+        if(Number(priorities[0]) !== max){
+          priorities.push(priorities.shift());
+        }else{
+          if(typeof priorities[0] === 'string'){
+            return answer + 1;
+          }
+          answer++;
+          priorities.shift();
         }
+      }
+    }
+  }
+}
+
+// 풀이 2
+// location 기억 => 객체의 키값으로 풀자 !  -->  근데 이 방법 시간초과 뜸 OUT
+{
+  function solution(priorities, location) {
+		var answer = 0;
+
+		const newArr = priorities.map((el, idx) => {
+			let obj = {};
+			obj[idx] = el;
+			return obj;
+		});
+
+		while(newArr.length > 0){
+			
+			for(let i=0; i<newArr.length; i++){
+				
+				let valueArr = newArr.map(el => { return Object.values(el); }).flat();
+				let max = Math.max(...valueArr);
+				
+				if(newArr[0][i] !== max){
+					newArr.push(newArr.shift());
+				}else{
+					if(newArr[0][i] === newArr[0][location]){
+						return answer + 1;
+					}
+					answer++;
+					newArr.shift();
+				}
+			}
+		}
+  }
+}
+
+// 다른 사람 풀이
+// 와 some에 대해 배워갑니다
+{
+  function solution(priorities, location) {
+    var answer = 0;
+
+    const newArr = priorities.map((el, idx) => ({
+      my: idx === location,
+      val: el
+    }));
+
+    while(true){
+      let cur = newArr.shift();
+      if(newArr.some(el => el.val > cur.val)){
+        newArr.push(cur);
+      }
+      else{
+        answer++;
+        if(cur.my) return answer;
+      }
     }
   }
 }
