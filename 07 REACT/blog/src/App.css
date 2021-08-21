@@ -4,25 +4,7 @@
 }*/
 
 /* 여기부터 내꺼 */
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  box-sizing: border-box;
-}
 
-.navigator {
-  background: rgb(233, 233, 233);
-  display: flex;
-  color: rgb(216, 144, 144);
-  padding: 15px;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.list{
-  padding: 20px;
-}
 
 /*.App-logo {
   height: 40vmin;
