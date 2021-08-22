@@ -1,0 +1,19 @@
+.inputBox{
+  display: flex;
+}
+
+input {
+  padding: 5px;
+}
+
+.inputText {
+  padding: 15px;
+}
+
+button {
+  padding: 5px 4px;
+}
+
+.inputBtn {
+  padding: 15px 0px;
+}
