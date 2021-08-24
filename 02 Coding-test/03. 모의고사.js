@@ -102,7 +102,7 @@
     let obj = {'1': 0, '2': 0, "3": 0};
     
     for(let i=0; i<answers.length; i++){
-        if(answers[i] === one[i%5]){
+        if(answers[i] === one[i%5]){            
             obj['1'] += 1;
         }
         if(answers[i] === two[i%8]){
