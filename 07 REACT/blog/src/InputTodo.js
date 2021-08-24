@@ -23,7 +23,7 @@ function Inputform({ listname, onChange, onCreate, onCheckEnter, listInput }) {
       </div>
       <span className="inputBtn">
         <button onClick={onCreate}>
-          ENTER
+          <b>ENTER</b>
         </button>
       </span>
     </section>
