@@ -27,7 +27,7 @@
 
   📎 <a href="https://programmers.co.kr/" target="_blank">_프로그래머스_</a>
 
-  📎 <a href="https://www.acmicpc.net/step" target="_blank">_백준_</a>
+  📎 <a href="https://solved.ac/problems/level" target="_blank">_백준_</a>
 
 
 
