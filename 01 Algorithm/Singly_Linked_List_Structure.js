@@ -32,7 +32,7 @@ class SinglyLinkedList{
         this.length++;
         return this;     
     }
-    pop(val){
+    pop(){
         if(!this.head) return undefined;
         let current = this.head;
         let newTail = current;
@@ -51,6 +51,30 @@ class SinglyLinkedList{
             this.tail = null;
         }
         return current;
+    }
+    shift(){
+        if(!this.head) return undefined;
+        let currentHead = this.head;
+        this.head = currentHead.next;
+        this.length--;
+        if(this.length === 0){
+            this.tail = null;
+        }
+        return currentHead;
+    }
+    // 오와아아아 혼자 완서어어엉
+    unshift(val){
+        let newNode = new Node(val);
+        if(!this.head){
+            this.head = newNode;
+            this.tail = this.head;
+        }
+        else{
+            newNode.next = this.head;
+            this.head = newNode;   
+        }
+        this.length++;
+        return this;
     }
 }
 
@@ -89,7 +113,7 @@ class SinglyLinkedList{
 
         }        
     }
-    traverse(val){
+    pop(val){
         let cur = this.head;
         while(cur){
             if(this.head === val){
