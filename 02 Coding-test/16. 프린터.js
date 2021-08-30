@@ -25,10 +25,10 @@
  */
 
 /** 입출력 예시
- *     priorities      location    return
+ *  priorities          location    return
  * 
- *    [2, 1, 3, 2]	      2	          1
- * [1, 1, 9, 1, 1, 1]	  0	          5
+ *  [2, 1, 3, 2]	          2	         1
+ *  [1, 1, 9, 1, 1, 1]	    0	         5
  */
 
 // 문제 파악
