@@ -22,12 +22,7 @@ function App() {
     setInputs({...inputs, [name]: value});
   }
 
-  const [lists, setLists] = useState([
-    {
-      id: 0,
-      listname: ''
-    }
-  ]);
+  const [lists, setLists] = useState([]);
 
   // useRef() 사용할 때 넣어준 parm값 === .current의 기본값
   // 왜 const nextId = {current: 4} / let nextId = 4; 안되는가 ??!!
@@ -41,7 +36,7 @@ function App() {
    * 그래서 해당 방법을 지양하는 것 같습니다 :)
    */
   const listInput = useRef();
-  const nextId = useRef(2);
+  const nextId = useRef(0);
   const onCreate = () => {
     
     const newList = {
@@ -49,8 +44,10 @@ function App() {
       listname
     };
 
-    setLists([...lists, newList]);
-    // setLists(lists.concat(newList));
+    if(newList.listname !== ''){
+      setLists([...lists, newList]);
+      // setLists(lists.concat(newList));
+    }
 
     setInputs({
       listname: ''
@@ -68,14 +65,16 @@ function App() {
 
   return (
     <main className="container">
-      <InputTodo 
-        listname={listname}
-        onChange={onChange}
-        onCreate={onCreate}
-        onCheckEnter={onCheckEnter}
-        listInput={listInput}
-      />
-      <Todolist lists={lists} />
+      <div id="contaunerBox">
+        <InputTodo 
+          listname={listname}
+          onChange={onChange}
+          onCreate={onCreate}
+          onCheckEnter={onCheckEnter}
+          listInput={listInput}
+        />
+        <Todolist lists={lists} />
+      </div>
     </main>
   );
 }
