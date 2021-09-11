@@ -9,7 +9,6 @@ const server = http.createServer((request, response) => {
   const {headers, method, url} = request;
 
   let body = [];
-  console.log(request);
   request.on('error', (err) => {
     console.error(err);
     response.statusCode = 400;
@@ -17,9 +16,7 @@ const server = http.createServer((request, response) => {
   }).on('data', (chunk) => {
     body.push(chunk);
   }).on('end', () => {
-    body = Buffer.concat(body);
-    // console.log(method);
-    // console.log(url);
+    body = Buffer.concat(body).toString();
 
     if(method === 'OPTIONS'){
       response.writeHead(200, defaultCorsHeader);
@@ -27,12 +24,12 @@ const server = http.createServer((request, response) => {
     }
   
     if(method === 'POST' && url === '/upper'){
-      response.writeHead(200, defaultCorsHeader);
+      response.writeHead(200, defaultOrigin);
       body = body.toUpperCase();
       response.write(body);
     }
     else if(method === 'POST' && url === '/lower'){
-      response.writeHead(200, defaultCorsHeader);
+      response.writeHead(200, defaultOrigin);
       body = body.toLowerCase();
       response.write(body);
     }
@@ -48,35 +45,6 @@ const server = http.createServer((request, response) => {
     console.error(err);
   });
 
-  // const { headers, method, url } = request;
-
-  // let body = [];
-  // request.on('error', (err) => {
-  //   console.error(err);
-  // }).on('data', (chunk) => {
-  //   body.push(chunk);
-  // }).on('end', () => {
-
-  //   if(method === 'OPTION', url === '/upper'){
-  //     body = Buffer.concat(body).toString().toUpperCase();
-  //   }
-  //   else if(method === 'OPTION', url === '/lower'){
-  //     body = Buffer.concat(body).toString().toLowerCase();
-  //   }
-
-  //   response.on('error', (err) => {
-  //     console.error(err);
-  //   });
-
-  //   response.writeHead(200, defaultCorsHeader);
-  //   response.write(body);
-  //   response.end();
-  // });
-  
-  // console.log(
-  //   `http request method is ${request.method}, url is ${request.url}`
-  // );
-
 });
 
 server.listen(PORT, ip, () => {
@@ -89,3 +57,7 @@ const defaultCorsHeader = {
   'Access-Control-Allow-Headers': 'Content-Type, Accept',
   'Access-Control-Max-Age': 10
 };
+
+const defaultOrigin = {
+  'Access-Control-Allow-Origin': '*'
+}
