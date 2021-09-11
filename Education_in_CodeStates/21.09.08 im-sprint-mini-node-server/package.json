@@ -4,7 +4,10 @@
   "description": "Codestates Immersive Course Sprint",
   "main": "index.js",
   "dependencies": {
-    "@codestates-cc/submission-npm": "^1.1.3"
+    "@codestates-cc/submission-npm": "^1.1.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   },
   "scripts": {
     "test": "echo no test",
