@@ -2,6 +2,8 @@ const path = require('path');
 const { getDataFromFile } = require('./01_callBack');
 const { getDataFromFilePromise } = require('./02_promiseConstructor');
 
+// __dirname  : 현재 실행 중인 폴더 경로
+// __filename : 현재 실행 중인 파일 경로
 const user1Path = path.join(__dirname, 'files/user1.json');
 const user2Path = path.join(__dirname, 'files/user2.json');
 
