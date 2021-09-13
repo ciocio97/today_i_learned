@@ -37,13 +37,13 @@ export default function Main() {
   useEffect(() => {
     // [02 로딩 상태]를 업데이트한다. 항공편 데이터를 받아오기 전까지 로딩...
     setIsLoading(true);
-    // // getFlight 함수에 [01 조건 상태]를 넣어 원하는 데이터만 추출해온다
-    // getFlight(condition).then(result => {
-    //   // 추출해온 데이터로 [03 결과 상태]를 업데이트한다.
-    //   setFlightList(result);
-    //   // [02 로딩 상태]를 업데이트한다. 항공편 데이터 받아왔으니까 로딩... 끝
-    //   setIsLoading(false);
-    // });
+    // getFlight 함수에 [01 조건 상태]를 넣어 원하는 데이터만 추출해온다
+    getFlight(condition).then(result => {
+      // 추출해온 데이터로 [03 결과 상태]를 업데이트한다.
+      setFlightList(result);
+      // [02 로딩 상태]를 업데이트한다. 항공편 데이터 받아왔으니까 로딩... 끝
+      setIsLoading(false);
+    });
   }, [condition]) // 조건이 변경될 때마다 useEffect가 실행된다.
 
   global.search = search // 실행에는 전혀 지장이 없지만, 테스트를 위해 필요한 코드입니다. 이 코드는 지우지 마세요!                       
