@@ -45,15 +45,18 @@ export const MyInput = ({ value, handleValueChange }) => {
 
   const handleClick = () => {
     // TODO : isEditMode 상태를 변경합니다.
+    setEditMode(!isEditMode);
   };
 
   const handleBlur = () => {
     // TODO : Edit가 불가능한 상태로 변경합니다.
     handleValueChange(newValue);
+    setEditMode(!isEditMode);
   };
 
   const handleInputChange = (e) => {
     // TODO : 저장된 value를 업데이트합니다.
+    setNewValue(e.target.value);
   };
 
   return (
@@ -65,10 +68,13 @@ export const MyInput = ({ value, handleValueChange }) => {
           ref={inputEl}
           // TODO : 포커스를 잃으면 Edit가 불가능한 상태로 변경되는 메소드가 실행되어야 합니다.
           // TODO : 변경 사항이 감지되면 저장된 value를 업데이트 되는 메소드가 실행되어야 합니다.
+          onChange={handleInputChange}
+          onBlur={handleBlur}
         />
       ) : (
         <span 
         // TODO : 클릭하면 Edit가 가능한 상태로 변경되어야 합니다.
+        onClick={handleClick}
         >{newValue}</span>
       )}
     </InputBox>
@@ -88,7 +94,7 @@ export const ClickToEdit = () => {
     <>
       <InputView>
         <label>이름</label>
-        <MyInput value={name} handleValueChange={(newValue) => setName(newValue)} />
+        <MyInput value={name} handleValueChange={(newValue) => setName(newValue)}/>
       </InputView>
       <InputView>
         <label>나이</label>
