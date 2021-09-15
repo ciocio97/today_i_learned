@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import _ from 'lodash';
 
 const deselectedOptions = [
   'rustic',
@@ -7,6 +8,7 @@ const deselectedOptions = [
   'vinyl',
   'vintage',
   'refurbished',
+  'r',
   '신품',
   '빈티지',
   '중고A급',
@@ -106,6 +108,36 @@ export const Autocomplete = () => {
      * 3. autocomplete 추천 항목인 options의 상태가 적절하게 변경되어야 합니다.
      * Tip : options의 상태에 따라 dropdown으로 보여지는 항목이 달라집니다.
      */
+    const text = event.target.value
+
+    const newArr = deselectedOptions.filter((e) => {
+      while(text.length > 0){
+        let result = true;
+        for(let i=0; i<text.length; i++){
+          if(e[i] === text[i]){
+            result = result && true;
+          }
+          else{
+            result = result && false;
+          }
+        }
+        if(result) return true;
+        else return false;       
+      }
+      // console.log(e.match(text));
+      // // ["r", index: 0, input: "rustic", groups: undefined]
+      // // ["r", index: 0, input: "refurbished", groups: undefined]
+      // // ["r", index: 0, input: "r", groups: undefined]
+      // return e.match(text);
+    }).sort();
+
+    console.log(newArr);
+    // ["rustic", "refurbished", "r"]
+
+    setInputValue(text);
+    setHasText(!hasText);
+    setOptions(newArr);
+    // console.log(options);
   };
 
   const handleDropDownClick = (clickedOption) => {
@@ -120,6 +152,10 @@ export const Autocomplete = () => {
      * 1. input값 상태인 inputValue가 적절하게 변경되어야 합니다.
      * 2. autocomplete 추천 항목인 options의 상태가 적절하게 변경되어야 합니다.
      */
+    // event.target.innerText / outerText 로 접근하면 안되는 이유 ???
+    const completedText = clickedOption.target.firstChild.data;
+    setInputValue(completedText);
+    setOptions([completedText]);
   };
 
   const handleDeleteButtonClick = () => {
@@ -133,6 +169,8 @@ export const Autocomplete = () => {
      * onClick 이벤트 발생 시
      * 1. input값 상태인 inputValue가 빈 문자열이 되어야 합니다.
      */
+    setInputValue('');
+    // setOptions([]);
   };
 
   // Advanced Challenge: 상하 화살표 키 입력 시 dropdown 항목을 선택하고, Enter 키 입력 시 input값을 선택된 dropdown 항목의 값으로 변경하는 handleKeyUp 함수를 만들고,
@@ -142,11 +180,12 @@ export const Autocomplete = () => {
     <div className='autocomplete-wrapper'>
       <InputContainer>
         {/* TODO : input 엘리먼트를 작성하고 input값(value)을 state와 연결합니다. handleInputChange 함수와 input값 변경 시 호출될 수 있게 연결합니다. */}
+        <input type="text" value={inputValue} onChange={handleInputChange}></input>
         {/* TODO : 아래 div.delete-button 버튼을 누르면 input 값이 삭제되어 dropdown이 없어지는 handler 함수를 작성합니다. */}
-        <div className='delete-button'>&times;</div>
+        <div className='delete-button' onClick={handleDeleteButtonClick}>&times;</div>
       </InputContainer>
       {/* TODO : input 값이 없으면 dropdown이 보이지 않아야 합니다. 조건부 렌더링을 이용해서 구현하세요. */}
-      <DropDown />
+      {inputValue === '' ? null : <DropDown options={options} handleComboBox={handleDropDownClick}/>}
     </div>
   );
 };
@@ -155,6 +194,9 @@ export const DropDown = ({ options, handleComboBox }) => {
   return (
     <DropDownContainer>
       {/* TODO : input 값에 맞는 autocomplete 선택 옵션이 보여지는 역할을 합니다. */}
+      {options.map((e, idx) => {
+        return <li key={idx} onClick={handleComboBox}>{e}</li>
+      })}
     </DropDownContainer>
   );
 };
