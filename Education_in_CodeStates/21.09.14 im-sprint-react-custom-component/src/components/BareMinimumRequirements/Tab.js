@@ -39,9 +39,9 @@ export const Tab = () => {
   // currentTab 상태와 currentTab을 갱신하는 함수가 존재해야 하고, 초기값은 0 입니다.
 
   const menuArr = [
-    { name: 'Tab1', content: 'Tab menu ONE' },
-    { name: 'Tab2', content: 'Tab menu TWO' },
-    { name: 'Tab3', content: 'Tab menu THREE' },
+    { name: 'Tab1', content: 'ONE' },
+    { name: 'Tab2', content: 'TWO' },
+    { name: 'Tab3', content: 'THREE' },
   ];
 
   const [currentTab, setCurrentTab] = useState(0);
