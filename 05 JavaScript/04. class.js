@@ -66,7 +66,7 @@ const experiment = new Experiment();
 console.log(experiment.publicField);
 console.log(experiment.privateFiled);
 
-// 4. Static properties and methods
+// 4. 'Static' properties and methods
 // Too soon!
 class Article {
     static publisher = 'Dream Coding';
