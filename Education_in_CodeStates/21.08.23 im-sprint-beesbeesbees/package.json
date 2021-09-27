@@ -1,0 +1,45 @@
+{
+  "name": "beesbeesbees",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "report": "mocha test/**/*.js --reporter @mochajs/json-file-reporter",
+    "submit": "codestates-submission"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "eslint",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "node_modules/",
+      "**/test/*.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codestates/im-sprints-beesbeesbees.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codestates/im-sprints-beesbeesbees/issues"
+  },
+  "homepage": "https://github.com/codestates/im-sprints-beesbeesbees#readme",
+  "dependencies": {
+    "@codestates-cc/submission-npm": "^1.1.3"
+  },
+  "devDependencies": {
+    "@mochajs/json-file-reporter": "^1.3.0",
+    "chai": "^4.1.2",
+    "mocha": "^8.2.0",
+    "underscore": "^1.9.1"
+  }
+}
