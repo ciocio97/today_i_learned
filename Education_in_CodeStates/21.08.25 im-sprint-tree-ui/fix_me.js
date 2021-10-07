@@ -170,28 +170,64 @@ const menu = [
 // TODO: createTreeView 함수를 재귀(자기 자신을 계속 부르게 함)호출하여 테스트케이스를 통과하세요.
 // GOAL: 최종 결과가 resut.html와 같은 모습으로 나와야 합니다.
 
-const root = document.getElementById('root');
-function createTreeView(menu, currentNode) {
-  menu.map((el) => {
-    let li = document.createElement('li');
-    if(el.children !== undefined){
-      let input = document.createElement('input');
-      let ul = document.createElement('ul');
-      let span = document.createElement('span');
-      input.setAttribute('type', 'checkbox');
-      span.textContent = el.name;
+{
+  const root = document.getElementById('root');
+  function createTreeView(menu, currentNode) {
 
-      li.append(input);
-      li.append(span);
-      currentNode.append(li);
+    menu.map((el) => {
+      let li = document.createElement('li');
+      if(el.children !== undefined){
+        let input = document.createElement('input');
+        let ul = document.createElement('ul');
+        let span = document.createElement('span');
+        input.setAttribute('type', 'checkbox');
+        span.textContent = el.name;
 
-      li.append(ul);
-      createTreeView(el.children, ul);
-    }else{
-      currentNode.append(li);
-      li.textContent = el.name;
-    }
-  });      
+        li.append(input);
+        li.append(span);
+        li.append(ul);   
+        // li.append(input, span, ul) 으로 교체 가능
+        currentNode.append(li);
+
+        createTreeView(el.children, ul);
+      }else{
+        // li 태그를 append시키는 로직이 없기때문에
+        // else문에서도 append시켜줘야하는 불상사(?)발생
+        currentNode.append(li);
+        li.textContent = el.name;
+      }
+    });      
+  }
+
+  createTreeView(menu, root);
 }
 
-createTreeView(menu, root);
+/* Code Refactoring */
+{
+  const root = document.getElementById('root');
+  function createTreeView(menu, currentNode) {
+
+    menu.map((el) => {
+      const list = document.createElement('li');
+      currentNode.append(list);
+
+      const input = document.createElement('input');
+      const span = document.createElement('span');
+      const ul = document.createElement('ul');
+      input.type = 'checkbox';
+      span.textContent = el.name;
+
+      // 자식 노드가 있을 때
+      if(el.children){
+        list.append(input, span, ul);
+        createTreeView(el.children, ul);
+      }
+      // 자식 노드가 없을 때
+      else{
+        list.textContent = el.name;
+      }
+    });
+  }
+
+  createTreeView(menu, root);
+}
