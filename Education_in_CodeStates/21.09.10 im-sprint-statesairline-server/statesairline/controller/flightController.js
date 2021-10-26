@@ -6,9 +6,9 @@ module.exports = {
   findAll: async (req, res) => {
 
     // console.log(req.query);
-    // 첫 번째 방법
+    // 세 번째 방법 : Refactoring
     const list = flights.filter(item => _.isMatch(item, req.query));
-    // 두 번째 방법
+    // 두 번째 방법 : Refactoring
     const list2 = flights.filter(item => {
       return (item.uuid === (req.query.uuid || item.uuid)) && 
              (item.departure === (req.query.departure || item.departure))&& 
@@ -22,7 +22,7 @@ module.exports = {
              // 둘 다 falsy한 값이라면 (0 || undefined) (undefined || 0) 맨 뒤에 위치한 값을 반환한다.
     })
     return res.json(list2);
-    // 세 번째 방법
+    // 첫 번째 방법
     const dep = req.query.departure;
     const des = req.query.destination;
     const dt = req.query.departure_times;
@@ -48,6 +48,12 @@ module.exports = {
   // [GET] /flight/{:id}
   // 요청 된 id 값과 동일한 uuid 값을 가진 항공편 데이터를 조회합니다.
   findById: async (req, res) => {
+    // 두 번째 방법 : Refactoring
+    const list = flights.filter(item => {
+      return item.uuid === req.params.id
+    })
+    return res.json(list);
+    // 첫 번째 방법
     const id = req.params.id
 
     if(id){
@@ -67,7 +73,7 @@ module.exports = {
     const id = req.params.id;
     let data;
 
-    flights.map((item) => {
+    flights.forEach((item) => {
       if(item.uuid === id){
         for(let key in req.body){
           item[key] = req.body[key];
