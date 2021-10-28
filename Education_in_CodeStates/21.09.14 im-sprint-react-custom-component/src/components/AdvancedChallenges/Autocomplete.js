@@ -108,6 +108,25 @@ export const Autocomplete = () => {
      * 3. autocomplete 추천 항목인 options의 상태가 적절하게 변경되어야 합니다.
      * Tip : options의 상태에 따라 dropdown으로 보여지는 항목이 달라집니다.
      */
+    
+    // 3. autocomplete 추천 항목인 options의 상태가 적절하게 변경되어야 합니다.
+    // 두 번째 방법 : Refactoring
+    const newTxt = event.target.value;
+
+    setInputValue(newTxt);
+    inputValue === '' ? setHasText(false) : setHasText(true);
+
+    const newArr = deselectedOptions.filter((el) => {
+                     let result = true;
+                     for(let idx=0; idx<newTxt.length; idx++){
+                       result = result && newTxt[idx] === el[idx];
+                     }
+                     return result;
+                   });
+    
+    setOptions(newArr);
+    // 3. autocomplete 추천 항목인 options의 상태가 적절하게 변경되어야 합니다.
+    // 첫 번째 방법
     const text = event.target.value
 
     const newArr = deselectedOptions.filter((e) => {
@@ -131,13 +150,12 @@ export const Autocomplete = () => {
       // return e.match(text);
     }).sort();
 
+    setOptions(newArr);
     console.log(newArr);
     // ["rustic", "refurbished", "r"]
 
     setInputValue(text);
     setHasText(!hasText);
-    setOptions(newArr);
-    // console.log(options);
   };
 
   const handleDropDownClick = (clickedOption) => {
