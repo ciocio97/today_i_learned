@@ -98,3 +98,53 @@
     return answer.sort()[0];
   }
 }
+
+// 풀이 -> 페어의 풀이 : 독특한 dfs() 구동 방식
+{
+  function solution(tickets) {
+
+    // 티켓 오름차순 정렬
+    tickets.sort();
+    // 티켓의 쓰임 유무를 기록하는 visited 배열
+    let visited=Array(tickets.length).fill(false);
+    // 최종 결과를 담을 배열
+    let answer = [];
+
+    // dfs() 호출
+    dfs("ICN",0,["ICN"])
+
+    // dfs() 함수
+    function dfs(cur,cnt,path){
+
+      if(cnt === tickets.length && answer.length === 0){
+        answer = path;
+        return;
+
+      }
+
+      for(let i = 0;i < tickets.length; i++){
+
+        if(visited[i]) continue;
+
+        if(tickets[i][0]===cur){
+
+          visited[i] = true;
+
+          // 함수는 ... 본인이 선언된 환경을 기억한다 .... 미쳤다 진짜 ;;
+          // 만약 dfs()가 BASE CASE를 일치시키지 못해서 undefined를 반환하면, 당시의 인덱스를 기억하기 때문에 (scope)
+          // visited[idx] = false 처리를 해서 방문했던 기록을 지운다.
+          // 그리고 dfs() 실행으로 인해 접근하지 못했던 나머지 인덱스들을 for문으로 돌면서 처리한다....
+          dfs(tickets[i][1],cnt+1,[...path,tickets[i][1]]);
+
+          visited[i] = false;
+
+        }
+
+      }
+
+    }
+
+    return answer;
+
+  }
+}
