@@ -14,7 +14,7 @@ module.exports = {
       // your code here
       // TODO: 데이터베이스에서 로그인한 사용자의 정보를 조회한 후 응답합니다.
       const userData = await Users.findOne({
-        where: { userId : req.session.session_id },
+        where: { userId : req.session.session_id.userId },
       });
       // console.log(userData.dataValues);
       res.status(200).send({ data: userData.dataValues, message: 'ok' });
