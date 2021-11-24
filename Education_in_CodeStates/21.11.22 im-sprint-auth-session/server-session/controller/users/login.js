@@ -14,13 +14,13 @@ module.exports = {
     // TODO: userInfo 결과 존재 여부에 따라 응답을 구현하세요.
 
     // 결과가 존재하는 경우 세션 객체에 userId가 저장되어야 합니다.
-    if (!result) {
+    if (!userInfo) {
       // your code here
       res.status(401).send({ data: null, message: 'not authorized' });
     } else {
       // your code here
       // HINT: req.session을 사용하세요.
-      req.session.session_id = result;
+      req.session.session_id = userInfo;
       // 굳이 이렇게 save 메서드를 사용해서 저장했는지 안했는지 체크해야 하나요 ?
       // req.session.save(function(err){
       //   if(err) res.status(404).send({ data: null, message: 'fail to save' });
@@ -29,7 +29,7 @@ module.exports = {
       // save로 저장후 실행해야하는 동작 적을 수 있음 **
       req.session.save(function(err){
         if(err) throw Error;
-        res.status(200).send({ data: result, message: 'ok' });
+        res.status(200).send({ data: userInfo, message: 'ok' });
         // 또는 res.redirect('/') 저장 후 원래 페이지로 돌아갈 수도 있어 !
       });
     }
