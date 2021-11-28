@@ -1,0 +1,29 @@
+.inputBox{
+  display: flex;
+  border-bottom: solid 3px rgb(255, 255, 255);
+}
+
+input {
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+}
+
+input:focus {outline:none;} 
+
+.inputText {
+  padding: 20px 18px;
+}
+
+button {
+  padding: 7px 7px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: rgb(64, 112, 64);
+  color: white;
+}
+
+.inputBtn {
+  padding: 20px 0px;
+}
