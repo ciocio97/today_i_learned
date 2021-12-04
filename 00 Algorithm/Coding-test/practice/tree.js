@@ -55,3 +55,59 @@ const rangeMinimum = function (arr, ranges) {
 };
 
 // 배열로 tree 구현해보기 Advanced
+
+
+
+// 아 트리 너무 어렵다 .....
+// divide and conquer: O(N * logN)
+const largestRectangularArea = function (histogram) {
+
+  // 트리 만드는 함수
+  const createMinIdxTree = (arr, ts, te) => {
+    // 가장 작은 값의 '인덱스'를 구하기 위한 트리 .. ^!^
+    if(ts === te) return { idx: ts, val: arr[ts] };
+
+    const mid = parseInt((ts + te) / 2);
+    const left = createMinIdxTree(arr, ts, mid);
+    const right = createMinIdxTree(arr, mid + 1, te);
+
+    return {
+      idx: left.val < right.val ? left.idx : right.idx,
+      val: Math.min(left.val, right.val),
+      left,
+      right
+    };
+  };
+  const tree = createMinIdxTree(histogram, 0, histogram.length - 1);
+
+  // 최저 인덱스를 구하는 함수
+  const getMinIdx = (ts, te, rs, re, tree) => {
+    if(rs <= ts && te <= re) return tree.idx;
+    if(te < rs || re < ts) return rs;
+
+    const midIdx = parseInt((ts + te) / 2);
+    const leftIdx = getMinIdx(ts, midIdx, rs, re, tree.left);
+    const rightIdx = getMinIdx(midIdx + 1, te, rs, re, tree.right);
+
+    return histogram[leftIdx] < histogram[rightIdx] ? leftIdx : rightIdx;
+  }
+
+  // 사각형 넓이를 구하는 함수
+  const getRangeArea = (start, end) => {
+    
+    if(start > end) return 0;
+    // 최저 인덱스
+    const minIdx = getMinIdx(0, histogram.length - 1, start, end, tree);
+
+    return Math.max(
+      (end - start + 1) * histogram[minIdx],
+      getRangeArea(start, minIdx - 1),
+      getRangeArea(minIdx + 1, end)
+    );
+  };
+
+  // histogram [2,1,4,5,1,3,3] 막대 높이가 들어있는 배열의 시작 인덱스와 끝 인덱스를 넣어
+  // 사각형 넓이를 구하는 함수에 넣어 리턴
+  return getRangeArea(0, histogram.length - 1);
+
+};
