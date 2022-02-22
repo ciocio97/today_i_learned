@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    border: 3px solid tomato;
+    flex: 1 1;
+}
+
+.filedirectory {
+    border: 3px solid tomato;
+    flex: 4.5 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    border: 1px dashed blue;
+}
+
+#s1 {
+    flex: 2.53 1;  /* ... */
+}
+
+#s2 {
+    flex: 2.53 1;
+}
+
+#s3 {
+    flex: 1 1;
+}
+
+.mainview {
+    border: 3px solid tomato;
+    flex: 30 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.views {
+    border: 1px dashed blue;
+}
+
+#code {
+    flex: 5 1;
+}
+
+#footer {
+    flex: 1 1;
+}

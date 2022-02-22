@@ -1,0 +1,97 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: 'monospace', cursive;
+  color: #000;
+}
+
+body {
+background-image: url('./data/8.27_background.jpeg');
+background-size: cover;  
+/* cover은 화면창 막 움직여도 예쁘게 나온다 ('상하'를 딱 맞춘 느낌)*/
+/* contain했더니 안예쁘게 잘려서 나온다 ('좌우'를 딱 맞춘 느낌)*/
+/* 100vh 100vw 오마갓 화면창 움직였더니 유동적으로 변하는게 아니라 막 찌부된다 */
+}
+
+/*
+Calculator styles
+*/
+
+/* 나는 twittler에서 body에 flex-box를 적용했는데 */
+/* 그것보다 태그들 전체를 묶어서 여기다 flex-box적용하는 게 더 낫겠다. */
+.container {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* 부모의 flex 속성은 따라가는데, 갑자기 그의 자식들이 static하게 배치됨 */
+.calculator {
+width: 300px;
+height: 500px;
+border-radius: 30px;
+background: rgb(235, 80, 175);
+box-shadow: 5px 6px 20px 3px white;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.calculator__display--bare {
+display: none;
+/*width: 260px;
+height: 90px;
+margin-top: 50px;
+border-radius: 20px;
+background: white;*/
+
+/* flex-box 주고(row), 자식 요소들 (j-c)으로 일정 간격 주고, (a-i)으로 중심 잡기 */
+/* 이게 자식 요소들이 span태그들이라 적용된거구나 (div는 안됌..) */
+/*display: flex;
+justify-content: space-evenly; 
+align-items: center;*/
+}
+
+.calculator__display--for-advanced {
+width: 260px;
+height: 90px;
+margin-top: 50px;
+border-radius: 20px;
+background: white;
+
+display: flex;
+justify-content: space-evenly; 
+align-items: center;
+}
+
+.calculator__buttons {
+width: 100%;
+height: 100%;
+margin: 20px;
+padding: 50px;
+background-color: blue;
+
+/* flex-box 주고(column), 자식 요소들 (j-c)으로 일정 간격 주니까 -> 내가 원하는 수직 등분 가능 ! */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.clear__and__enter {
+margin-left: 0px;
+}
+
+button {
+padding: 15px;
+}
+
+.button__row > .number__double {
+width: 87px; 
+}

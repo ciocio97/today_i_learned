@@ -1,0 +1,172 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 11,
+    "passes": 11,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-16T06:48:34.982Z",
+    "end": "2021-11-16T06:48:37.120Z",
+    "duration": 2138
+  },
+  "tests": [
+    {
+      "title": "users router 파일이 존재해야 합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router users router 파일이 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "orders controller에는 get, post 메소드가 각각 존재해야 합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router orders controller에는 get, post 메소드가 각각 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "GET /users는 orders controller의 get 메소드를 실행합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router GET /users는 orders controller의 get 메소드를 실행합니다",
+      "duration": 17,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "POST /users는 orders controller의 post 메소드를 실행합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router POST /users는 orders controller의 post 메소드를 실행합니다",
+      "duration": 15,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "GET /items 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller GET /items 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "duration": 10,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "GET /users/:userId/orders 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller GET /users/:userId/orders 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "POST /users/:userId/orders 요청에서 클라이언트가 잘못된 요청을 했을 경우 상태코드 400을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller POST /users/:userId/orders 요청에서 클라이언트가 잘못된 요청을 했을 경우 상태코드 400을 보내야합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "POST /users/:userId/orders 요청에 성공했을 경우 상태코드 201을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller POST /users/:userId/orders 요청에 성공했을 경우 상태코드 201을 보내야합니다.",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "데이터베이스에 저장된 상품 목록을 가져와야합니다.",
+      "fullTitle": "🗄  Cmarket Database ✨-------- Cmarket Model 데이터베이스에 저장된 상품 목록을 가져와야합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "주문내역을 데이터베이스에 저장해야합니다.",
+      "fullTitle": "🗄  Cmarket Database ✨-------- Cmarket Model 주문내역을 데이터베이스에 저장해야합니다.",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "데이터베이스에 저장된 주문내역을 가져와야합니다.",
+      "fullTitle": "🗄  Cmarket Database ✨-------- Cmarket Model 데이터베이스에 저장된 주문내역을 가져와야합니다.",
+      "duration": 18,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "users router 파일이 존재해야 합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router users router 파일이 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "orders controller에는 get, post 메소드가 각각 존재해야 합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router orders controller에는 get, post 메소드가 각각 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "GET /users는 orders controller의 get 메소드를 실행합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router GET /users는 orders controller의 get 메소드를 실행합니다",
+      "duration": 17,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "POST /users는 orders controller의 post 메소드를 실행합니다",
+      "fullTitle": "🗄  Cmarket Database 🗺 -------- Cmarket Router POST /users는 orders controller의 post 메소드를 실행합니다",
+      "duration": 15,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "GET /items 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller GET /items 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "duration": 10,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "GET /users/:userId/orders 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller GET /users/:userId/orders 요청에 성공했을 경우 상태코드 200을 보내야합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "POST /users/:userId/orders 요청에서 클라이언트가 잘못된 요청을 했을 경우 상태코드 400을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller POST /users/:userId/orders 요청에서 클라이언트가 잘못된 요청을 했을 경우 상태코드 400을 보내야합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "POST /users/:userId/orders 요청에 성공했을 경우 상태코드 201을 보내야합니다.",
+      "fullTitle": "🗄  Cmarket Database 🕹 -------- Cmarket Controller POST /users/:userId/orders 요청에 성공했을 경우 상태코드 201을 보내야합니다.",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "데이터베이스에 저장된 상품 목록을 가져와야합니다.",
+      "fullTitle": "🗄  Cmarket Database ✨-------- Cmarket Model 데이터베이스에 저장된 상품 목록을 가져와야합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "주문내역을 데이터베이스에 저장해야합니다.",
+      "fullTitle": "🗄  Cmarket Database ✨-------- Cmarket Model 주문내역을 데이터베이스에 저장해야합니다.",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "데이터베이스에 저장된 주문내역을 가져와야합니다.",
+      "fullTitle": "🗄  Cmarket Database ✨-------- Cmarket Model 데이터베이스에 저장된 주문내역을 가져와야합니다.",
+      "duration": 18,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

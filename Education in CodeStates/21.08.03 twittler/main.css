@@ -1,0 +1,112 @@
+* {
+  font-family: 'Signika', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0 25px;
+  margin: 0;
+}
+
+#greeting {
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 1em;
+  color: white;
+  background-color: rgb(107, 136, 218);
+  text-shadow: 0 0 5px #333;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+#greeting:hover {
+  color: rgb(107, 136, 218);
+  background-color: white;
+  text-shadow: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-left {
+  padding-top: 10px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column; 
+  /* p태그가 붙여져 있을 때 flex 조절안됐다. */
+  /* html만으로 보기엔 좋은데, 굳이굳이 쓰고싶다면 p태그에 flex적용해야겠더라*/
+}
+
+#username, #message {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  color: rgb(83, 83, 83);
+  font-weight: bold;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+  /* 우리가 placeholder를 사용하면 안되는 이유 */
+}
+
+#input__username {
+  width: 170px;
+  height: 25px;
+}
+
+#input__message {
+  height: 60px;
+}
+
+#input_comment_btn, #update__comments_btn, #more__comments_btn {
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(107, 136, 218);
+  background-color: white;
+  border: 0px solid transparent; /* 버튼 안보이게 투명속성 */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#input_comment_btn:hover, #update__comments_btn:hover, #more__comments_btn:hover {
+  color: white;
+  background-color: rgb(107, 136, 218);
+  text-shadow: 0 0 1px #333;
+}
+
+.align-right {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;  /* right는 안되고, flex-end는 왜 되지...*/
+}
+
+ul {
+  padding-left: 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.twit {
+  list-style: none;
+  border-bottom: 1px dashed gray;
+  padding: 20px;
+}
+
+.date {
+  float: right;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
