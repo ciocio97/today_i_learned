@@ -1,1 +1,0 @@
-# React-custom-component
