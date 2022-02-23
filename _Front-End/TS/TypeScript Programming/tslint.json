@@ -1,0 +1,15 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest",
+        "tslint-config-prettier"
+    ],
+    "linterOptions": {
+        "excludes": ["config/**/*.js", "node_modules/**/*."]
+    },
+    "rules": {
+        "semicolon": true,
+        "trailing-comma": [true],
+        "indent": [true, "tabs", 2]
+    }
+}
