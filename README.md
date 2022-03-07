@@ -1,5 +1,7 @@
 <p><h1>Today I Learned</h1></p>
 
+<br/>
+
 Algorithm
 ---------
 
