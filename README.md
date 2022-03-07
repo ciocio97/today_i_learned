@@ -3,20 +3,34 @@
 Algorithm
 ---------
 
+<br />
+
 Computer Science
 ----------------
+
+<br />
 
 Data Structure
 --------------
 
+<br/>
+
 Education in CodeStates
 -----------------------
+
+<br/>
 
 Git
 ---
 
+<br/>
+
 _Back-End
 ---------
 
+<br/>
+
 _Front-End
 ---------
+
+<br/>
