@@ -23,6 +23,7 @@
   if(typeof a === 'number'){
       let d = a + 70;            // number
   }                              // -> unknown값을 사용하고 싶을 땐 조건문을 통해 unknown 타입을 검증해야한다.
+                                 // -> 이렇게 type이 판명난 후에는 사용할 수 있음.
 }
 
 {
