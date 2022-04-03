@@ -76,7 +76,7 @@ class SinglyLinkedList{
         this.length++;
         return this;
     }
-    // Array의 기능 추가
+    // Array의 index 조회 기능 추가
     get(index){
         if(index < 0 || index >= this.length) return null;
         let counter = 0;
@@ -86,6 +86,15 @@ class SinglyLinkedList{
             counter++;
         }
         return current;
+    }
+    // Array의 index 조회&교체 기능 추가
+    set(index, val){
+        let foundNode = this.get(index);
+        if(foundNode){
+            foundNode.val = val;
+            return true;
+        }
+        return false;
     }
 }
 
