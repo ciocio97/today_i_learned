@@ -62,7 +62,7 @@ class SinglyLinkedList{
         }
         return currentHead;
     }
-    // 오와아아아 혼자 완서어어엉
+    // 와 혼자 완성
     unshift(val){
         let newNode = new Node(val);
         if(!this.head){
@@ -75,6 +75,17 @@ class SinglyLinkedList{
         }
         this.length++;
         return this;
+    }
+    // Array의 기능 추가
+    get(index){
+        if(index < 0 || index >= this.length) return null;
+        let counter = 0;
+        let current = this.head;
+        while(counter !== index){
+            current = current.next;
+            counter++;
+        }
+        return current;
     }
 }
 
