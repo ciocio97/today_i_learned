@@ -76,7 +76,7 @@ class SinglyLinkedList{
         this.length++;
         return this;
     }
-    // Array의 index 조회 기능 추가
+    // index 조회 기능 추가
     get(index){
         if(index < 0 || index >= this.length) return null;
         let counter = 0;
@@ -87,7 +87,7 @@ class SinglyLinkedList{
         }
         return current;
     }
-    // Array의 index 조회&교체 기능 추가
+    // index 조회&교체 기능 추가
     set(index, val){
         let foundNode = this.get(index);
         if(foundNode){
@@ -96,7 +96,7 @@ class SinglyLinkedList{
         }
         return false;
     }
-    // Array의 index 삽입 기능 추가
+    // index 삽입 기능 추가
     insert(index, val){
         if(index < 0) return false;
         if(index > this.length) return false;
@@ -114,6 +114,19 @@ class SinglyLinkedList{
         // index 이후의 값들은 for문을 돌면서 모두 교체해줘야겠다고 생각했는데,
         // 오히려 index 이전 값과 현재 값의 자리를 바꿈으로서 한방에 해결. 
         // ( List라 index개념이 없어서 가능한 일이기도 함. Array였으면 삽있했을 때 모든 index 교체해줘야함. )
+    }
+    // index 삭제 기능 추가
+    remove(index){
+        if(index < 0) return undefined;
+        if(index >= this.length) return undefined;
+        if(index === this.length - 1) return this.pop();
+        
+        let previousNode = this.get(index - 1);
+        let removed = previousNode.next;
+        previousNode.next = removed.next;
+        this.length--;
+        return removed;
+        // 앞 Node와 연결된 next 값을 지우고 뒷 Node와 연결
     }
 }
 
