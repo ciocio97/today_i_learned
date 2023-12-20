@@ -145,19 +145,19 @@ randomQuiz('love you', printYes, printNo);
 
 // Arrow function
 // always anonymous
-const simplePrint = function() {
+let simplePrint = function() {
     console.log('simplePrint!');
 };
 
-const add = function(a, b) {
+let add = function(a, b) {
     return a + b;
 };
 
 // 변신
-const simplePrint = () => console.log('simplePrint');
+simplePrint = () => console.log('simplePrint');
 
 // 변신
-const add = (a, b) => a + b;
+add = (a, b) => a + b;
 // the other
 const simpleMultiply = (a, b) => {
     return a * b;

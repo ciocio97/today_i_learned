@@ -1,0 +1,25 @@
+/* div는 Block-level / span은 Inline-level 
+ *
+ * 그래서 <span>은 <div>랑 다르게 <span>1<span> 이렇게 컨텐츠가 들어있어야 출력됌
+ * span을 block처럼 쓰고싶으면 직접 display: block 지정해줘야함
+ * div를 inline처럼 쓰고싶으면 직접 display: inline-block 지정해줘야함
+ * div에서 display: inline 을 해주면, <div><div> 아무것도 안들어있다면 span처럼 출력 nothing
+ *
+ */
+
+/* Inline ? (한 줄에 여러개 정렬 o 물건)
+ *
+ * 컨텐츠 자체만을 꾸며준다.
+ * 내가 지정한 width나 height 무시하고, 
+ * <span>123456789<span> -> 단지 콘텐츠 크기에 맞춰 변한다 
+ *
+ */
+
+/* Inline-Block ? (한 줄에 여러개 정렬 o 박스) */
+
+/* Block ? (한 줄 당 하나씩만 ! 들어가는 박스)
+ *
+ * 컨텐츠 상관없이!
+ * 내가 지정한 width나 height에 맞춰서 변한다 ~! 
+ *
+ */

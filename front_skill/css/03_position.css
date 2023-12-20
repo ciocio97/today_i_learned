@@ -27,6 +27,6 @@ div {
     top: 20px;
     position: relative;    /* 원래 있던 자리를 기준 삼아 ! 움직이는구나 ! */
     position: absolute;    /* box가 몸담고 있는 container를 기준 삼아 ! 움직이는구나 ! */
-    position: fixed;       /* 내가 보고 있는 브라우저를 기준 삼아 ! 움직이는구나! */
+    position: fixed;       /* 내가 보고 있는 브라우저 화면을 기준 삼아 ! 움직이는구나! */
     position: sticky;      /* 원래 있는 자리 유지하면서 ~ 스크롤 내려도 고 자리에 고대로 !! WOW */
 }

@@ -24,9 +24,9 @@ class UserStorage {
 }
 
 
-const userStorage = new UserStorage();
-const id = prompt('enter your id');
-const password = prompt('enter your password');
+let userStorage = new UserStorage();
+let id = prompt('enter your id');
+let password = prompt('enter your password');
 
 userStorage.loginUser(
     id,
@@ -80,9 +80,9 @@ class UserStorage {
     }
 }
 
-const userStorage = new UserStorage();
-const id = prompt('enter tour id:');
-const password = prompt('enter your password');
+userStorage = new UserStorage();
+id = prompt('enter tour id:');
+password = prompt('enter your password');
 userStorage
 .loginUser(id, password)
 .then(userStorage.getRoles)
