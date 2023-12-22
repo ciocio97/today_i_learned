@@ -1,15 +1,17 @@
 # Today I Learned
 
+매일 공부하는 습관 체화를 위한 노력의 일환
+
+<br/>
 <br/>
 
-## algorithm
+## 📂 algorithm
 
 <br/>
 
 #### 목적
 
-**알고리즘** 은 컴퓨팅적 사고(^_^)의 밑거름이기에,  
-반복적인 학습과 주입(?)을 위해 개설 
+**알고리즘** 은 컴퓨팅적 사고(^_^)의 밑거름이기에, 반복적인 학습과 주입(?)을 위해 개설 
 
 <br/>
 
@@ -19,8 +21,9 @@
 * 코딩 테스트 풀이 및 고민 기록
 
 <br/>
+<br/>
 
-## block_chain
+## 📂 block_chain
 
 <br/>
 
@@ -35,8 +38,9 @@
 * 블록체인 관련 학습 기록
 
 <br/>
+<br/>
 
-## book_report
+## 📂 book_report
 
 <br/>
 
@@ -52,8 +56,9 @@ _"개발 서적 읽긴 읽었는데요 .. 네 .."_ 를 방지하기 위해 개�
 * 함께 읽고 기록 (feat. 북 스터디)
 
 <br/>
+<br/>
 
-## data_structure
+## 📂 data_structure
 
 <br/>
 
@@ -68,8 +73,9 @@ _"개발 서적 읽긴 읽었는데요 .. 네 .."_ 를 방지하기 위해 개�
 * Udemy [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/) 강의를 듣고 학습한 자료 구조 관련 내용 기록
 
 <br/>
+<br/>
 
-## education_in_code_state
+## 📂 education_in_code_state
 
 <br/>
 
@@ -85,8 +91,9 @@ _"개발 서적 읽긴 읽었는데요 .. 네 .."_ 를 방지하기 위해 개�
 * 실습 코드 위주
 
 <br/>
+<br/>
 
-## engineer_information_processing
+## 📂 engineer_information_processing
 
 <br/>
 
@@ -101,8 +108,9 @@ _"개발 서적 읽긴 읽었는데요 .. 네 .."_ 를 방지하기 위해 개�
 * 개발 이론부터 실전까지 [정보처리기사 책](https://www.aladin.co.kr/m/mproduct.aspx?ItemId=324139406) 전반의 내용 요약
 
 <br/>
+<br/>
 
-## front_skill
+## 📂 front_skill
 
 <br/>
 
@@ -123,8 +131,9 @@ _"개발 서적 읽긴 읽었는데요 .. 네 .."_ 를 방지하기 위해 개�
 * vue
 
 <br/>
+<br/>
 
-## git
+## 📂 git
 
 <br/>
 
