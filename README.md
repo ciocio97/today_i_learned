@@ -5,7 +5,7 @@
 <br/>
 <br/>
 
-## 📂 algorithm
+## 📂 [algorithm](https://github.com/ciocio97/today_i_learned/tree/Today_I_Learned/algorithm)
 
 <br/>
 
