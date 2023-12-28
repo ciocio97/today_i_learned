@@ -49,13 +49,13 @@
 
 | 이름 | 1주 | 2주 | 3주 | 4주 | 5주 | 6주 | 7주 | 8주 | 9주 | 10주 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [@이*희]() | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> |
-| [@김*보]() | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  |  |  |
-| [@안*]() | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> |
-| [@문*희]() | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> |
-| [@신*철]() | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> |
-| [@이승연](https://github.com/ciocio97) | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> |
-| [@신*섭]() | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  |  |
-| [@김*호]() | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  |  |  |  |  |  |  |  |
-| [@김*혜]() | <input type="checkbox" disabled checked /> |  |  |  |  | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  |  |  |
-| [@이*규]() |  |  |  |  | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> | <input type="checkbox" disabled checked /> |  | <input type="checkbox" disabled checked /> |
+| [@이*희]() | ✅ | ✅ | ✅ |  | ✅ | ✅ | ✅ | ✅ |  | ✅ |
+| [@김*보]() | ✅ | ✅ | ✅ | ✅ |  | ✅ | ✅ |  |  |  |
+| [@안*]() | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  | ✅ |
+| [@문*희]() | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  | ✅ |
+| [@신*철]() | ✅ | ✅ | ✅ | ✅ | ✅ |  | ✅ | ✅ |  | ✅ |
+| [@이승연](https://github.com/ciocio97) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  | ✅ |
+| [@신*섭]() | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
+| [@김*호]() | ✅ | ✅ |  |  |  |  |  |  |  |  |
+| [@김*혜]() | ✅ |  |  |  |  | ✅ | ✅ |  |  |  |
+| [@이*규]() |  |  |  |  | ✅ | ✅ | ✅ | ✅ |  | ✅ |
