@@ -155,7 +155,7 @@ Ajax로 정보를 얻고, 동적으로 페이지 업데이트를 하는 웹 애�
 **C** 컨트롤러층   
 
 기존 서버 사이드에 보급되었던 '프레임워크'의 개념이 프론트엔드에도 도입됌.
-eg. Backbone.js
+eg. Backbone.js (프레임워크)
 
 <br/>
 
@@ -168,6 +168,65 @@ eg. Backbone.js
 
 View Model : 데이터와 화면 표시의 가교 역할  
 
-model 로부터 view 를 연동하고,
+`model <---> view`  
+model 로부터 view, view 로부터 model 을 연동해 양방향 바인딩을 수행하는 아키텍쳐  
+eg. AngularJS, Vue.js, KnockoutJS, Riot,js (라이브러리)
+
+<br/>
+
+## 리액트의 등장. 컴포넌트 지향과 상태 관리
+
+<br/>
+
+`특징`  
+
+* 가상 DOM ⭐️
+* 선언적 UI
+* 단방향 데이터 전달
+* 컴포넌트 전달 / 함수 컴포넌트
+* Flux 아키텍처와의 친화성
+
+<br/>
+
+#### 가상 DOM ⭐️ ?
+
+<br/>
+
+`가상 돔` 을 두어, 브라우저가 가진 DOM 의 API 를 **직접 조작하지 않고**  
+노드의 변경이 있을 경우에 변경 전후의 가상 DOM을 비교해서 업데이트 위치를 파악하고,  
+필요에 따라 변경점들을 모아 `실제 DOM` 에 변경을 적용하는 기술  
+
+<br/>
+
+#### 상태 관리 아키텍쳐 Flux ?
+
+<br/>
+
+페이스북은 MVVM 프레임워크의 양방향 데이터 바인딩 기능에 문제를 제기함.  
+MVVM 프레임워크로 개발하면 코드가 간략해지는 장점이 있지만,  
+지나치게 사용하면 변경점의 영향도를 추적하기 어렵고 코드의 복잡성이 높아진다는 단점 주장.  
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/facebookarchive/flux/main/img/flux-diagram-white-background.png" alt="flux_image">
+
+<br/>
+
+`Flux 특징`  
+
+* **MVC** 와 같은 설계상의 지침으로 기능.
+* 데이터 흐름이 단방향 (**uni-directional data binding**)
+* 상태 흐름 추적 용이하게 끔 (**양**방향 → **단**방향)  
+
+<br/>
+
+애플리케이션 표시를 담당하는 `View` 에서 필요한 상태 획득은 `Store` 에서 수행.  
+상태 업데이트는 `Action` 이라는 데이터를 `Dispatcher` 에 전달하여 수행.  
+
+상태 관리 라이브러리, 프레임워크 대부분은 플럭스의 사상을 어느정도 받아들였다.
+
+<br/>
+
+추가적인 학습이 필요한 지식 : 모듈화 / 빌드 / 정적 구문 확인 / 테스트  
 
 <br/>
