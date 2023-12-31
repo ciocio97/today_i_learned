@@ -209,6 +209,9 @@ MVVM 프레임워크로 개발하면 코드가 간략해지는 장점이 있지�
 <br/>
 
 <img src="https://raw.githubusercontent.com/facebookarchive/flux/main/img/flux-diagram-white-background.png" alt="flux_image">
+<br/>
+
+`참고` [flux](https://github.com/facebookarchive/flux)
 
 <br/>
 
