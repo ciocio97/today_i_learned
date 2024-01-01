@@ -163,9 +163,9 @@ eg. Backbone.js (프레임워크)
 
 #### MVVM ?
 
-**M** 데이터 모델층
-**V** 사용자 인터페이스층
-**V** View
+**M** 데이터 모델층  
+**V** 사용자 인터페이스층  
+**V** View  
 **M** Model  
 
 View Model : 데이터와 화면 표시의 가교 역할  
@@ -212,7 +212,6 @@ MVVM 프레임워크로 개발하면 코드가 간략해지는 장점이 있지�
 
 <img src="https://raw.githubusercontent.com/facebookarchive/flux/main/img/flux-diagram-white-background.png" alt="flux_image">
 <br/>
-
 `참고` [flux](https://github.com/facebookarchive/flux)
 
 <br/>
@@ -292,7 +291,7 @@ module.exports.sum = (x, y) => x + y;
 
 // util.js 를 읽는 main.js
 const { sum } = require('./util.js');
-console.log(sum(2, 5));
+console.log(sum(2, 5)); // 7
 
 ```
 
@@ -307,12 +306,32 @@ console.log(sum(2, 5));
 ```js
 
 /* [ES 모듈 구현 예]
- *  
+ *  모듈 정의에 export, 로딩에 import 사용
  */ 
+
+// util.js 파일 정의
+export const sum = (x, y) => x + y;
+
+// util.js 를 읽는 main.js
+import { sum } from './util.js';
+console.log(sum(2, 5)); // 7
 
 ```
 
+<br/>
 
+`참고` [Node.js에 관해 후회하는 10가지](https://www.youtube.com/watch?v=M3BM9TB-8yA)  
+
+<br/>
+
+📌 **Deno**
+
+<br/>
+
+Node.js 창시자 라이언 달이 개발한, 새로운 자바스크립트/타입스크입트 런타임 환경  
+Node → Deno
+
+`참고` [Deno](https://deno.com/)
 
 
 <br/>
