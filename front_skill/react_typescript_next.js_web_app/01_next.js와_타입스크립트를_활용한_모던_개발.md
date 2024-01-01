@@ -316,11 +316,7 @@ export const sum = (x, y) => x + y;
 import { sum } from './util.js';
 console.log(sum(2, 5)); // 7
 
-```
-
-<br/>
-
-`참고` [Node.js에 관해 후회하는 10가지](https://www.youtube.com/watch?v=M3BM9TB-8yA)  
+``` 
 
 <br/>
 
@@ -331,6 +327,7 @@ console.log(sum(2, 5)); // 7
 Node.js 창시자 라이언 달이 개발한, 새로운 자바스크립트/타입스크입트 런타임 환경  
 Node → Deno
 
+`참고` [Node.js에 관해 후회하는 10가지](https://www.youtube.com/watch?v=M3BM9TB-8yA)  
 `참고` [Deno](https://deno.com/)
 
 
