@@ -172,7 +172,7 @@ View Model : 데이터와 화면 표시의 가교 역할
 
 `model <---> view`  
 model 로부터 view, view 로부터 model 을 연동해 양방향 바인딩을 수행하는 아키텍쳐  
-eg. AngularJS, Vue.js, KnockoutJS, Riot,js (라이브러리)
+eg. AngularJS / Vue.js / KnockoutJS / Riot,js (라이브러리)
 
 <br/>
 
@@ -329,6 +329,45 @@ Node → Deno
 
 `참고` [Node.js에 관해 후회하는 10가지](https://www.youtube.com/watch?v=M3BM9TB-8yA)  
 `참고` [Deno](https://deno.com/)
+
+<br/>
+
+## AltJS의 유행과 TypeScript의 꾸준한 확산 
+
+<br/>
+
+`AltJS` 는 _컴파일을 통해 자바스크립트를 생성_ 하는 프로그래밍 언어의 대분류  
+
+#### AltJS 등장 배경 
+
+자바스크립트는 인기도 많고, 프론트엔드 개발에 자주 쓰이는 언어이지만, 문법에 문제가 있다고 생각하는 개발자들이 많음.  
+2010년경부터, 자바스크립트가 아닌 언어로 코드를 기술하고, 그걸 컴파일해 자바스크립트로 변환하는 `AltJS` 들이 생겨남.  
+eg. CoffeeScript / ClosureScript / Dart / TypeScript
+
+<br/>
+
+📌 **트랜스파일** ?
+
+<br/>
+
+한 언어를 다른 언어로 컴파일하는 것.
+
+<br/>
+
+📌 **Babel** (바벨) ?  
+
+<br/>
+
+브라우저 벤더가 최신 ECMA 사양에 기술된 기능을 제공하지 않을 수도 있기에, (업데이트 느림)  
+표준 구현되지 않은 브라우저에서도 최신 ECMA 사양의 자바스크립트 문법을 읽을 수 있도록 변환해주는 **컴파일러** 이다.  
+
+* 크로스 브라우징 : 각 브라우저마다 JS 엔진이 다르기에, 모든 브라우저에서 동작할 수 있도록 호환성을 지켜줌
+* 폴리필 (polyfill) : 
+
+<br/>
+
+
+
 
 
 <br/>
