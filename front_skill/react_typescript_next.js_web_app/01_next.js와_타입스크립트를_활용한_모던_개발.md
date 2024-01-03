@@ -346,11 +346,21 @@ eg. CoffeeScript / ClosureScript / Dart / TypeScript
 
 <br/>
 
-📌 **트랜스파일** ?
+📌 **컴파일러** ?
+📌 **트랜스파일러** ?
+📌 **컴파일러** 와 **트랜스파일러** 의 차이는 ?
 
 <br/>
 
-한 언어를 다른 언어로 컴파일하는 것.
+|          |   컴파일러   |  트랜스파일러  |
+| -------- | -------- | -------- |
+|  `language level` (언어 수준)  | `high` → `low` | `high` → `high` |
+| `abstraction level` (추상화 수준) | input > output | input === output |
+| `output code` (변환 완료 코드) | `assembly language` 이기에, <br/> 기계가 바로 읽을 수 있다. | 아직 `high-level language` 이기에, 기계가 읽기 위해선 `compile` 단계가 필요하다. |
+| `inner workings` (내부 동작) | `scan` → `parse` → `abstract syntax tree` → <br/>`intermediate code` → `assembly language` | `parse` → `abstract syntax tree` → <br/>`intermediate model` → `abstract syntax tree of the target language` |
+| `example` | Java code → assembly language  | Java code → C++ code |
+
+`참고` [difference of compiler and transpiler](https://www.geeksforgeeks.org/difference-between-transpiler-and-compiler/)
 
 <br/>
 
@@ -358,11 +368,19 @@ eg. CoffeeScript / ClosureScript / Dart / TypeScript
 
 <br/>
 
-브라우저 벤더가 최신 ECMA 사양에 기술된 기능을 제공하지 않을 수도 있기에, (업데이트 느림)  
-표준 구현되지 않은 브라우저에서도 최신 ECMA 사양의 자바스크립트 문법을 읽을 수 있도록 변환해주는 **컴파일러** 이다.  
+ECMA 2015+ 이상의 코드가 현재나 이전의 브라우저에서 호한가능하도록 변환시켜주는 툴체인.  
+ECMA 기능을 **폴리필** 한다고 볼 수 있다.
 
-* 크로스 브라우징 : 각 브라우저마다 JS 엔진이 다르기에, 모든 브라우저에서 동작할 수 있도록 호환성을 지켜줌
-* 폴리필 (polyfill) : 
+브라우저 벤더가 최신 ECMA 사양에 기술된 기능을 제공하지 않을 수도 있기에,
+표준 구현되지 않은 브라우저에서도 최신 ECMA 사양의 자바스크립트 문법을 읽을 수 있도록 변환해주는 **컴파일러**.  
+
+* **폴리필** (polyfill)  
+
+    : 이전 브라우저에서 지원하지 않는 기능을 제공하는 데 필요한 코드 조각 혹은 그러한 동작.  
+    : eg. [1st version of jQuery](https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js)
+
+* `참고` [Babel](https://babeljs.io/docs/)  
+* `참고` [Pollyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
 
 <br/>
 
