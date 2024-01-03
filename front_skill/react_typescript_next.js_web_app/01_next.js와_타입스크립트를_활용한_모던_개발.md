@@ -212,6 +212,7 @@ MVVM 프레임워크로 개발하면 코드가 간략해지는 장점이 있지�
 
 <img src="https://raw.githubusercontent.com/facebookarchive/flux/main/img/flux-diagram-white-background.png" alt="flux_image">
 <br/>
+
 `참고` [flux](https://github.com/facebookarchive/flux)
 
 <br/>
@@ -258,7 +259,7 @@ MVVM 프레임워크로 개발하면 코드가 간략해지는 장점이 있지�
 `모듈` 을 `import` 해 `transpile` 하기 위한 `빌드 시스템` 또한 당연하게 프론트엔드 개발에 보급되었음.  
 이 빌드 시스템을 통해, 많은 모듈로 개발된 것을 하나로 압축된 자바스크립트 파일로 만들어 브라우저에 쉽게 로드 가능 😉  
 배포시 빌드 프로세스를 통해 자바스크립트 파일을 수행하기 때문에,  
-개발자는 자바스크립트 뿐만 아니라 다른 언어도 기술할 수 있다는 `AltJS` 라는 발상도 생겨남 ㅋㅋㅋㅋ 😜  
+개발자는 자바스크립트 뿐만 아니라 다른 언어도 기술할 수 있다는 `AltJS` 라는 발상도 생겨남. 😮  
 
 <br/>
 
@@ -346,8 +347,8 @@ eg. CoffeeScript / ClosureScript / Dart / TypeScript
 
 <br/>
 
-📌 **컴파일러** ?
-📌 **트랜스파일러** ?
+📌 **컴파일러** ?  
+📌 **트랜스파일러** ?  
 📌 **컴파일러** 와 **트랜스파일러** 의 차이는 ?
 
 <br/>
@@ -357,7 +358,7 @@ eg. CoffeeScript / ClosureScript / Dart / TypeScript
 |  `language level` (언어 수준)  | `high` → `low` | `high` → `high` |
 | `abstraction level` (추상화 수준) | input > output | input === output |
 | `output code` (변환 완료 코드) | `assembly language` 이기에, <br/> 기계가 바로 읽을 수 있다. | 아직 `high-level language` 이기에, 기계가 읽기 위해선 `compile` 단계가 필요하다. |
-| `inner workings` (내부 동작) | `scan` → `parse` → `abstract syntax tree` → <br/>`intermediate code` → `assembly language` | `parse` → `abstract syntax tree` → <br/>`intermediate model` → `abstract syntax tree of the target language` |
+| `inner workings` (내부 동작) | `scan` → `parse` → `abstract syntax tree` → `intermediate code` → `assembly language` | `parse` → `abstract syntax tree` → `intermediate model` → `abstract syntax tree of the target language` |
 | `example` | Java code → assembly language  | Java code → C++ code |
 
 `참고` [difference of compiler and transpiler](https://www.geeksforgeeks.org/difference-between-transpiler-and-compiler/)
@@ -379,8 +380,8 @@ ECMA 기능을 **폴리필** 한다고 볼 수 있다.
     : 이전 브라우저에서 지원하지 않는 기능을 제공하는 데 필요한 코드 조각 혹은 그러한 동작.  
     : eg. [1st version of jQuery](https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js)
 
-* `참고` [Babel](https://babeljs.io/docs/)  
-* `참고` [Pollyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
+`참고` [Babel](https://babeljs.io/docs/)  
+`참고` [Pollyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
 
 <br/>
 
