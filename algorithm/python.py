@@ -52,20 +52,38 @@ print(int('1101', 2)) # 2진수(문자열) → 10진수 / 13
           불일치 - 1 처리
 ^ (XOR) : 일치 - 0 처리
           불일치 - 1 처리
+
+~ (NOT) : 비트를 뒤집음
+
+📌 어려워요.. 다시 공부하기
+👉🏻 n의 '보수' 란 ?
+: '어떤 수' 에 대해 'n의 제곱 수' 가 되도록 만드는 '수' 
+
+a << b : 왼쪽 시프트 (shift) 
+         [a x 2^b] 결과값과 동일
+a >> b : 오른쪽 시프트 (shift)
+         [a // 2^b] 결과값과 동일
 '''
 
-print(a & b) # AND / 4
-print(a | b) # OR / 13
-print(a ^ b) # XOR / 9
-print(~a) # NOT / 
-print(~b) # NOT / 
+print(a & b)  # AND / 4
+print(a | b)  # OR / 13
+print(a ^ b)  # XOR / 9
+print(~a)     # NOT / ?
+print(~b)     # NOT / ?
+print(a << 3) # 왼쪽 shift / 104
+print(a >> 3) # 오른쪽 shift / 1
+
+# 정수형 논리 연산
+
+print(a and b) # 논리 연산 AND / 4
+print(a or b)  # 논리 연산 OR / 13
+print(not a)   # 논리 연산 NOT / False
 
 ### 2️⃣ 부동소수형 float
 
 ### 3️⃣ 문자열 string
 
 
-print('hello')
 
 
 
